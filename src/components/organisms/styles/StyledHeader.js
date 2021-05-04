@@ -1,10 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const StyledHeaderWrapper = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #2e2a2a;
 `;
 
 export const StyledHeadingWrapper = styled.div`
@@ -17,22 +16,22 @@ export const StyledHeadingWrapper = styled.div`
 `;
 
 export const StyledHeading = styled.h1`
-  transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
-  opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
-  transition: 2s;
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 7rem;
+  opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
+  font-size: ${({ theme }) => theme.fontSizes.sl};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   letter-spacing: 2px;
+  transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
+  transition: 2s;
 `;
 
-export const StyledSubHeading = styled.h2`
-  transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
+export const StyledSubHeading = styled.h3`
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
+  font-size: ${({ theme }) => theme.fontSizes.xl};
+  font-weight: ${({ theme }) => theme.fontWeights.thin};
+  transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
   transition-delay: 0.5s;
-  font-weight: 100;
-  font-size: 4rem;
 `;
 
 export const StyledArrowButton = styled.button`
@@ -42,8 +41,8 @@ export const StyledArrowButton = styled.button`
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
+  font-size: ${({ theme }) => theme.fontSizes.xxl};
   color: white;
-  font-size: 5rem;
 
   & i {
     transform: translateY(-40px);

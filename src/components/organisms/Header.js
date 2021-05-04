@@ -11,7 +11,7 @@ import {
   StyledArrowButton,
 } from './styles/StyledHeader';
 
-const Header = (props) => {
+const Header = ({ particlesInit, particlesLoaded, onArrowButton }) => {
   const [isFadeIn, setIsFadeIn] = useState(false);
 
   useEffect(() => {
@@ -22,8 +22,8 @@ const Header = (props) => {
     <StyledHeaderWrapper>
       <Particles
         id="tsparticles"
-        init={props.particlesInit}
-        loaded={props.particlesLoaded}
+        init={particlesInit}
+        loaded={particlesLoaded}
         options={headerBackgroundOptions}
         height={'100vh'}
         width={'100%'}
@@ -34,9 +34,8 @@ const Header = (props) => {
           A Front-end Developer.
         </StyledSubHeading>
       </StyledHeadingWrapper>
-      <StyledArrowButton>
-        {/* <i class="fas fa-angle-down"></i> */}
-        <i class="fas fa-chevron-down"></i>
+      <StyledArrowButton onClick={() => onArrowButton()}>
+        <i className="fas fa-chevron-down"></i>
       </StyledArrowButton>
     </StyledHeaderWrapper>
   );

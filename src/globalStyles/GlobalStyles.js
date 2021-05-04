@@ -14,13 +14,11 @@ html{
 }
 
 body{
- /* font-family: 'Overpass', sans-serif; */
  font-family: 'Prompt', sans-serif;
 }
 
 button {
   cursor: pointer;
-  /* font-family: 'Overpass', sans-serif; */
   font-family: 'Prompt', sans-serif;
   outline: none;
 }

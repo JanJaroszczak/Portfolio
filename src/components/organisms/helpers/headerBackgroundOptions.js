@@ -119,7 +119,7 @@ export const headerBackgroundOptions = {
       },
     },
   },
-  // detectRetina: true,
+  detectRetina: true,
   pauseOnBlur: false,
   background: {
     color: '#2E2A2A',
