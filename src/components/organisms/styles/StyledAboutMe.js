@@ -8,18 +8,6 @@ export const StyledSectionWrapper = styled.section`
   border: 8px solid ${({ theme }) => theme.colors.gray};
 `;
 
-export const StyledSectionTitle = styled.h2`
-  position: absolute;
-  top: -84px;
-  left: 40px;
-  font-size: ${({ theme }) => theme.fontSizes.sl};
-  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
-  color: ${({ theme }) => theme.colors.gray};
-  transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(-60px)'};
-  transition: 1s;
-`;
-
 export const StyledImageColumn = styled.div`
   display: flex;
   justify-content: center;
@@ -41,18 +29,9 @@ export const StyledTextColumn = styled.div`
   /* border: 1px solid ${({ theme }) => theme.colors.gray}; */
 `;
 
-export const StyledSectionHeading = styled.h3`
-  margin: 20px 10px;
-  font-size: ${({ theme }) => theme.fontSizes.xl};
-  font-weight: ${({ theme }) => theme.fontWeights.light};
-  transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
-  transition: 1s;
-`;
-
 export const StyledSectionParagraph = styled.p`
-  margin: 20px 30px 30px;
-  font-size: ${({ theme }) => theme.fontSizes.m};
+  margin: 20px 40px 40px;
+  /* font-size: ${({ theme }) => theme.fontSizes.m}; */
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
   transform: ${({ visible }) =>

@@ -26,6 +26,26 @@ button {
 ul {
   list-style: none;
 }
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
 `;
 
 export default GlobalStyle;

@@ -18,16 +18,16 @@ export const StyledHeadingWrapper = styled.div`
 export const StyledHeading = styled.h1`
   margin-bottom: 20px;
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
-  font-size: ${({ theme }) => theme.fontSizes.sl};
+  /* font-size: ${({ theme }) => theme.fontSizes.sl}; */
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   letter-spacing: 2px;
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
 `;
 
-export const StyledSubHeading = styled.h3`
+export const StyledSubHeading = styled.h2`
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
-  font-size: ${({ theme }) => theme.fontSizes.xl};
+  /* font-size: ${({ theme }) => theme.fontSizes.xl}; */
   font-weight: ${({ theme }) => theme.fontWeights.thin};
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;

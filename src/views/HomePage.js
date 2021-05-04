@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AboutMe from '../components/organisms/AboutMe';
 import Header from '../components/organisms/Header';
+import MyTechStack from '../components/organisms/MyTechStack';
 
 import { StyledHomePageWrapper } from './styles/StyledHomePage';
 
@@ -23,6 +24,7 @@ const HomePage = () => {
     <StyledHomePageWrapper>
       <Header onArrowButton={scrollDown} />
       <AboutMe aboutMeOffsetTop={updateAboutMeOffset} />
+      <MyTechStack />
     </StyledHomePageWrapper>
   );
 };

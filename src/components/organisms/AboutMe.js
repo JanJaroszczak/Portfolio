@@ -2,14 +2,16 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import useOnScreen from '../../hoc/useOnScreen';
 
-import { StyledCommonPageWrapper } from './styles/StyledCommonElements';
+import {
+  StyledCommonPageWrapper,
+  StyledSectionTitle,
+  StyledSectionHeading,
+} from './styles/StyledCommonElements';
 import {
   StyledSectionWrapper,
-  StyledSectionTitle,
   StyledImageColumn,
   StyledImg,
   StyledTextColumn,
-  StyledSectionHeading,
   StyledSectionParagraph,
 } from './styles/StyledAboutMe';
 
