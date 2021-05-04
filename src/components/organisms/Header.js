@@ -8,6 +8,7 @@ import {
   StyledHeadingWrapper,
   StyledHeading,
   StyledSubHeading,
+  StyledArrowButton,
 } from './styles/StyledHeader';
 
 const Header = (props) => {
@@ -33,6 +34,10 @@ const Header = (props) => {
           A Front-end Developer.
         </StyledSubHeading>
       </StyledHeadingWrapper>
+      <StyledArrowButton>
+        {/* <i class="fas fa-angle-down"></i> */}
+        <i class="fas fa-chevron-down"></i>
+      </StyledArrowButton>
     </StyledHeaderWrapper>
   );
 };

@@ -107,7 +107,7 @@ export const headerBackgroundOptions = {
         opacity: 0.8,
       },
       repulse: {
-        distance: 200,
+        distance: 400,
         duration: 0.4,
         speed: 0.1,
       },

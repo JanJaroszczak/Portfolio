@@ -21,8 +21,9 @@ export const StyledHeading = styled.h1`
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
   transition: 2s;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 7rem;
+  letter-spacing: 2px;
 `;
 
 export const StyledSubHeading = styled.h2`
@@ -30,6 +31,46 @@ export const StyledSubHeading = styled.h2`
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
   transition: 2s;
   transition-delay: 0.5s;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 4rem;
+`;
+
+export const StyledArrowButton = styled.button`
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 5rem;
+
+  & i {
+    transform: translateY(-40px);
+    opacity: 0;
+    animation: arrow 2s linear infinite;
+  }
+
+  @keyframes arrow {
+    10% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    60% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
 `;
