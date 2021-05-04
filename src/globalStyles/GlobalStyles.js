@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
 *{
   margin: 0;
   padding: 0;
@@ -15,20 +14,18 @@ html{
 }
 
 body{
-    /* font-family: 'Roboto Condensed', sans-serif; */
+ font-family: 'Overpass', sans-serif;
 }
 
 button {
   cursor: pointer;
-  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Overpass', sans-serif;
   outline: none;
 }
 
 ul {
   list-style: none;
 }
-
-
 `;
 
 export default GlobalStyle;

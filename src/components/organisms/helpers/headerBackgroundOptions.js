@@ -1,7 +1,7 @@
 export const headerBackgroundOptions = {
   fpsLimit: 60,
   backgroundMode: {
-    enable: true,
+    enable: false,
     zIndex: 0,
   },
   particles: {
@@ -9,14 +9,14 @@ export const headerBackgroundOptions = {
       distance: 100,
     },
     number: {
-      value: 120,
+      value: 50,
       density: {
         enable: true,
         area: 800,
       },
     },
     color: {
-      value: '#00b3ff',
+      value: '#fff',
       animation: {
         enable: false,
         speed: 20,
@@ -44,7 +44,7 @@ export const headerBackgroundOptions = {
       random: false,
       animation: {
         enable: false,
-        speed: 3,
+        speed: 2,
         minimumValue: 0.1,
         sync: false,
       },
@@ -61,14 +61,14 @@ export const headerBackgroundOptions = {
     },
     links: {
       enable: true,
-      distance: 100,
+      distance: 150,
       color: '#ffffff',
       opacity: 0.4,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 2.5,
+      speed: 2,
       direction: 'none',
       random: false,
       straight: false,
@@ -107,7 +107,7 @@ export const headerBackgroundOptions = {
         opacity: 0.8,
       },
       repulse: {
-        distance: 300,
+        distance: 200,
         duration: 0.4,
         speed: 0.1,
       },
@@ -119,9 +119,10 @@ export const headerBackgroundOptions = {
       },
     },
   },
-  detectRetina: true,
+  // detectRetina: true,
+  pauseOnBlur: false,
   background: {
-    color: '#133b5d',
+    color: '#2E2A2A',
     image: '',
     position: '50% 50%',
     repeat: 'no-repeat',
