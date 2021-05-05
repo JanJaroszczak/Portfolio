@@ -22,11 +22,12 @@ export const StyledIconWrapper = styled.div`
 
 export const StyledImg = styled.img`
   width: 90px;
+
+  /* border: 1px solid black; */
 `;
 
 export const StyledSkillName = styled.h4`
   font-weight: ${({ theme }) => theme.fontWeights.light};
-  margin-top: auto;
 
   /* border: 1px solid black; */
 `;
