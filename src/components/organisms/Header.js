@@ -31,7 +31,7 @@ const Header = ({ particlesInit, particlesLoaded, onArrowButton }) => {
       <StyledHeadingWrapper>
         <StyledHeading fadeIn={isFadeIn}>Hi, I'm Jan Jaroszczak.</StyledHeading>
         <StyledSubHeading fadeIn={isFadeIn}>
-          A Front-end Developer.
+          Front-end Developer
         </StyledSubHeading>
       </StyledHeadingWrapper>
       <StyledArrowButton onClick={() => onArrowButton()}>

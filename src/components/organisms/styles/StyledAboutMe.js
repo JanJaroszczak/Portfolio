@@ -4,7 +4,7 @@ export const StyledSectionWrapper = styled.section`
   position: relative;
   display: grid;
   grid-template-columns: 3fr 4fr;
-  margin-top: 200px;
+  margin-top: 150px;
   border: 8px solid ${({ theme }) => theme.colors.gray};
 `;
 

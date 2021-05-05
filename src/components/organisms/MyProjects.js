@@ -30,12 +30,12 @@ const MyProjects = () => {
         </StyledSectionTitle>
         <ProjectCard
           img={project1}
-          alt="online shop gif"
+          alt="Online Shop GIF"
           projectLabel="Online Shop"
         />
         <ProjectCard
           img={project1}
-          alt="cms gif"
+          alt="CMS for E-Commerce GIF"
           projectLabel="CMS for E-Commerce"
         />
       </StyledSectionWrapper>

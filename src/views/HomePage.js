@@ -16,7 +16,7 @@ const HomePage = () => {
 
   const scrollDown = () => {
     window.scrollTo({
-      top: aboutMeOffset - 100,
+      top: aboutMeOffset - 150,
       behavior: 'smooth',
     });
   };
