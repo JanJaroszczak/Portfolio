@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-import useOnScreen from '../../hoc/useOnScreen';
+import useOnScreen from '../../utils/useOnScreen';
 
 import {
   StyledCommonPageWrapper,

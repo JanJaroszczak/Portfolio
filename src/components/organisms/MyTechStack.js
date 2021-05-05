@@ -10,25 +10,25 @@ import sassIcon from '@iconify-icons/logos/sass';
 import jqueryIcon from '@iconify-icons/cib/jquery';
 import styledComponents from '@iconify-icons/simple-icons/styled-components';
 import firebaseIcon from '@iconify-icons/logos/firebase';
+import fileTypeNpm from '@iconify-icons/vscode-icons/file-type-npm';
+import webpackIcon from '@iconify-icons/logos/webpack';
+import gitIcon from '@iconify-icons/logos/git-icon';
+import githubIcon from '@iconify-icons/cib/github';
 
-import reactIcon from '@iconify-icons/logos/react';
-
-import css3Shiled from '@iconify-icons/cib/css3-shiled';
-
-import useOnScreen from '../../hoc/useOnScreen';
 import SkillCard from '../atoms/SkillCard';
-
-import formikIcon from '../../assets/formik.png';
+import useOnScreen from '../../utils/useOnScreen';
 
 import {
   StyledCommonPageWrapper,
   StyledSectionTitle,
-  StyledSectionHeading,
 } from './styles/StyledCommonElements';
 import {
   StyledSectionWrapper,
+  StyledSectionHeading,
   StyledGridWrapper,
 } from './styles/StyledMyTechStack';
+
+import formikIcon from '../../assets/formik.png';
 
 const MyTechStack = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
@@ -55,6 +55,75 @@ const MyTechStack = () => {
     if (!isHeading2Visible) setIsHeading2Visible(true);
   }
 
+  const renderSkillCards = () => (
+    <>
+      <StyledGridWrapper technologies={true}>
+        <SkillCard
+          skillIcon={fileTypeHtml}
+          iconHeight={140}
+          skillLabel="HTML"
+        />
+        <SkillCard skillIcon={fileTypeCss} iconHeight={140} skillLabel="CSS" />
+        <SkillCard
+          skillIcon={fileTypeJsOfficial}
+          iconHeight={140}
+          skillLabel="JavaScript"
+        />
+        <SkillCard
+          skillIcon={fileTypeReactjs}
+          iconHeight={151}
+          skillLabel="React"
+        />
+        <SkillCard skillIcon={reduxIcon} iconHeight={123} skillLabel="Redux" />
+        <SkillCard
+          skillIcon={reactRouter}
+          iconHeight={82}
+          skillLabel="React Router"
+        />
+        <SkillCard
+          skillIcon={firebaseIcon}
+          iconHeight={120}
+          skillLabel="Google Firebase"
+        />
+        <SkillCard img={formikIcon} skillLabel="Formik" />
+        <SkillCard
+          skillIcon={materialUi}
+          iconHeight={110}
+          skillLabel="Material-UI"
+        />
+        <SkillCard skillIcon={sassIcon} iconHeight={105} skillLabel="Sass" />
+        <SkillCard
+          skillIcon={styledComponents}
+          iconHeight={150}
+          skillLabel="Styled Components"
+        />
+        <SkillCard
+          skillIcon={jqueryIcon}
+          iconHeight={120}
+          skillLabel="jQuery"
+          iconColor="#0868AB"
+        />
+      </StyledGridWrapper>
+      <StyledSectionHeading ref={heading2Ref} visible={isHeading2Visible}>
+        Tools:
+      </StyledSectionHeading>
+      <StyledGridWrapper>
+        <SkillCard skillIcon={fileTypeNpm} iconHeight={143} skillLabel="npm" />
+        <SkillCard
+          skillIcon={webpackIcon}
+          iconHeight={150}
+          skillLabel="Webpack"
+        />
+        <SkillCard skillIcon={gitIcon} iconHeight={130} skillLabel="Git" />
+        <SkillCard
+          skillIcon={githubIcon}
+          iconHeight={127}
+          skillLabel="GitHub"
+        />
+      </StyledGridWrapper>
+    </>
+  );
+
   return (
     <StyledCommonPageWrapper>
       <StyledSectionWrapper>
@@ -64,70 +133,7 @@ const MyTechStack = () => {
         <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
           Technologies:
         </StyledSectionHeading>
-        <StyledGridWrapper technologies={true}>
-          <SkillCard
-            skillIcon={fileTypeHtml}
-            iconHeight={140}
-            skillLabel="HTML"
-          />
-          <SkillCard
-            skillIcon={fileTypeCss}
-            iconHeight={140}
-            skillLabel="CSS"
-          />
-          <SkillCard
-            skillIcon={fileTypeJsOfficial}
-            iconHeight={140}
-            skillLabel="JavaScript"
-          />
-          <SkillCard
-            skillIcon={fileTypeReactjs}
-            iconHeight={145}
-            skillLabel="React"
-          />
-          <SkillCard
-            skillIcon={reduxIcon}
-            iconHeight={123}
-            skillLabel="Redux"
-          />
-          <SkillCard
-            skillIcon={reactRouter}
-            iconHeight={82}
-            skillLabel="React Router"
-          />
-          <SkillCard
-            skillIcon={materialUi}
-            iconHeight={110}
-            skillLabel="Material-UI"
-          />
-          <SkillCard img={formikIcon} skillLabel="Formik" />
-          <SkillCard skillIcon={sassIcon} iconHeight={105} skillLabel="Sass" />
-          <SkillCard
-            skillIcon={jqueryIcon}
-            iconHeight={120}
-            skillLabel="jQuery"
-            iconColor="#0868AB"
-          />
-          <SkillCard
-            skillIcon={styledComponents}
-            iconHeight={150}
-            skillLabel="Styled Components"
-          />
-
-          <SkillCard
-            skillIcon={firebaseIcon}
-            iconHeight={120}
-            skillLabel="Google Firebase"
-          />
-        </StyledGridWrapper>
-        <StyledSectionHeading ref={heading2Ref} visible={isHeading2Visible}>
-          Tools:
-        </StyledSectionHeading>
-        <StyledGridWrapper>
-          <SkillCard skillIcon={css3Shiled} iconHeight={140} skillLabel="CSS" />
-          <SkillCard skillIcon={css3Shiled} iconHeight={140} skillLabel="CSS" />
-          <SkillCard skillIcon={css3Shiled} iconHeight={140} skillLabel="CSS" />
-        </StyledGridWrapper>
+        {renderSkillCards()}
       </StyledSectionWrapper>
     </StyledCommonPageWrapper>
   );

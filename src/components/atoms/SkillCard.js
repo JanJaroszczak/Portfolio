@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Icon } from '@iconify/react';
 
-import useOnScreen from '../../hoc/useOnScreen';
+import useOnScreen from '../../utils/useOnScreen';
 
 import {
   StyledCardWrapper,
