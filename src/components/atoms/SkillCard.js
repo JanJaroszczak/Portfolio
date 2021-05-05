@@ -10,7 +10,14 @@ import {
   StyledSkillName,
 } from './styles/StyledSkillCard';
 
-const SkillCard = ({ skillIcon, iconHeight, iconColor, skillLabel, img }) => {
+const SkillCard = ({
+  skillIcon,
+  iconHeight,
+  iconColor,
+  skillLabel,
+  img,
+  imgAlt,
+}) => {
   const [isCardVisible, setIsCardVisible] = useState(false);
 
   const cardRef = useRef();
@@ -25,7 +32,7 @@ const SkillCard = ({ skillIcon, iconHeight, iconColor, skillLabel, img }) => {
     <StyledCardWrapper ref={cardRef} visible={isCardVisible}>
       <StyledIconWrapper>
         {img ? (
-          <StyledImg src={img} alt="Skill Icon" />
+          <StyledImg src={img} alt={imgAlt} />
         ) : (
           <Icon icon={skillIcon} height={iconHeight} color={iconColor} />
         )}

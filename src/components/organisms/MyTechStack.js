@@ -55,8 +55,11 @@ const MyTechStack = () => {
     if (!isHeading2Visible) setIsHeading2Visible(true);
   }
 
-  const renderSkillCards = () => (
+  const renderSkills = () => (
     <>
+      <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
+        Technologies:
+      </StyledSectionHeading>
       <StyledGridWrapper technologies={true}>
         <SkillCard
           skillIcon={fileTypeHtml}
@@ -85,7 +88,7 @@ const MyTechStack = () => {
           iconHeight={120}
           skillLabel="Google Firebase"
         />
-        <SkillCard img={formikIcon} skillLabel="Formik" />
+        <SkillCard img={formikIcon} imgAlt="Formik icon" skillLabel="Formik" />
         <SkillCard
           skillIcon={materialUi}
           iconHeight={110}
@@ -130,10 +133,7 @@ const MyTechStack = () => {
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
           My tech stack.
         </StyledSectionTitle>
-        <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
-          Technologies:
-        </StyledSectionHeading>
-        {renderSkillCards()}
+        {renderSkills()}
       </StyledSectionWrapper>
     </StyledCommonPageWrapper>
   );
