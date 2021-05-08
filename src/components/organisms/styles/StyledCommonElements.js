@@ -15,8 +15,7 @@ export const StyledSectionTitle = styled.h1`
   /* font-size: ${({ theme }) => theme.fontSizes.sl}; */
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   color: ${({ theme }) => theme.colors.gray};
-  transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(-60px)'};
+  transform: ${({ visible }) => (visible ? 'translateY(0)' : 'translateY(0)')};
   transition: 1s;
 `;
 

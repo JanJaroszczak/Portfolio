@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import AboutMe from '../components/organisms/AboutMe';
+import Contact from '../components/organisms/Contact';
 import Header from '../components/organisms/Header';
 import MyProjects from '../components/organisms/MyProjects';
 import MyTechStack from '../components/organisms/MyTechStack';
@@ -16,7 +18,7 @@ const HomePage = () => {
 
   const scrollDown = () => {
     window.scrollTo({
-      top: aboutMeOffset - 150,
+      top: aboutMeOffset - 100,
       behavior: 'smooth',
     });
   };
@@ -27,6 +29,7 @@ const HomePage = () => {
       <AboutMe aboutMeOffsetTop={updateAboutMeOffset} />
       <MyTechStack />
       <MyProjects />
+      <Contact />
     </StyledHomePageWrapper>
   );
 };
