@@ -1,9 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import Footer from '../components/organisms/navigations/Footer';
 import GlobalStyle from '../globalStyles/GlobalStyles';
 
 import { mainTheme } from '../themes/mainTheme';
+
+import { StyledPageContentWrapper } from './styles/StyledMainTemplate';
 
 const MainTemplate = ({ children }) => {
   return (
@@ -11,8 +14,8 @@ const MainTemplate = ({ children }) => {
       <GlobalStyle />
       <ThemeProvider theme={mainTheme}>
         {/* <Navbar /> */}
-        {children}
-        {/* <Footer /> */}
+        <StyledPageContentWrapper>{children}</StyledPageContentWrapper>
+        <Footer />
       </ThemeProvider>
     </>
   );
