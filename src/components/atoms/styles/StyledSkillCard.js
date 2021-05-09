@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+import { animationOffset } from '../../../helpers/elementsCSSVariables';
 
 export const StyledCardWrapper = styled.div`
   display: grid;
