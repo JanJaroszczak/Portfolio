@@ -10,6 +10,7 @@ import {
 import { StyledSectionWrapper } from './styles/StyledMyProjects';
 
 import project1 from '../../assets/online_shop.gif';
+import project2 from '../../assets/cms.png';
 
 const MyProjects = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
@@ -35,9 +36,10 @@ const MyProjects = () => {
           projectLabel="Online Shop"
         />
         <ProjectCard
-          img={project1}
+          img={project2}
           alt="CMS for E-Commerce GIF"
-          projectLabel="CMS for E-Commerce"
+          projectLabel="E-Commerce CMS"
+          duringDev
         />
       </StyledSectionWrapper>
     </StyledCommonPageWrapper>

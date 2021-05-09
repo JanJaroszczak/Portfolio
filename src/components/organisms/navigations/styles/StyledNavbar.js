@@ -46,6 +46,6 @@ export const StyledNavLink = styled.a`
 
   &:hover,
   &:active {
-    color: #c5c5c5;
+    color: ${({ theme }) => theme.colors.lightGray};
   }
 `;

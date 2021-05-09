@@ -7,9 +7,10 @@ import {
   StyledImageWrapper,
   StyledImg,
   StyledProjectName,
+  StyledDuringDevLabel,
 } from './styles/StyledProjectCard';
 
-const ProjectCard = ({ img, imgAlt, projectLabel }) => {
+const ProjectCard = ({ img, imgAlt, projectLabel, duringDev }) => {
   const [isCardVisible, setIsCardVisible] = useState(false);
 
   const cardRef = useRef();
@@ -24,6 +25,11 @@ const ProjectCard = ({ img, imgAlt, projectLabel }) => {
     <StyledProjectCardWrapper ref={cardRef} visible={isCardVisible}>
       <StyledImageWrapper>
         <StyledImg src={img} alt={imgAlt} />
+        {duringDev && (
+          <StyledDuringDevLabel>
+            <span>During dev...</span>
+          </StyledDuringDevLabel>
+        )}
       </StyledImageWrapper>
       <StyledProjectName>{projectLabel}</StyledProjectName>
     </StyledProjectCardWrapper>

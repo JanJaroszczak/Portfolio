@@ -1,6 +1,8 @@
 export const mainTheme = {
   colors: {
     white: '#fff',
+    lightGray: '#c5c5c5',
+    moderateGray: '#959595',
     gray: '#2e2a2a',
     black: '#000',
     link: 'rgb(85, 26, 139)',
