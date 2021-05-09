@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 html{
   font-size: 62.5%;
   font-weight: 300;
+  color: #2e2a2a;
 }
 
 body{

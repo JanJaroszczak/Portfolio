@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+
 export const StyledSectionWrapper = styled.section`
   position: relative;
   margin-top: 150px;
@@ -9,6 +11,9 @@ export const StyledSectionWrapper = styled.section`
 
 export const StyledContactHeading = styled.h4`
   margin: 30px 0;
+  margin: ${({ email, social }) =>
+    email ? '40px 0 15px' : social ? '50px 0 20px' : '30px 0'};
+
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
 
@@ -16,6 +21,12 @@ export const StyledContactHeading = styled.h4`
 `;
 
 export const StyledForm = styled.div`
+  transform: ${({ visible }) =>
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
+  transition: 1s;
+`;
+
+export const StyledFormContentWrapper = styled.div`
   max-width: 600px;
   margin: 0 auto;
 `;
@@ -97,4 +108,32 @@ export const StyledCheckboxLabel = styled.label`
   margin-left: 10px;
   font-size: ${({ theme }) => theme.fontSizes.m};
   vertical-align: 4px;
+`;
+
+export const StyledSubSectionWrapper = styled.div`
+  text-align: center;
+  transform: ${({ visible }) =>
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
+  transition: 1s;
+
+  span {
+    margin: 0 20px;
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+`;
+
+export const StyledContactLink = styled.a`
+  font-size: ${({ theme }) => theme.fontSizes.m};
+  color: ${({ theme }) => theme.colors.gray};
+  text-decoration: none;
+
+  i {
+    margin-right: 10px;
+  }
+`;
+
+export const StyledLi = styled.li`
+  &:first-child {
+    margin-bottom: 15px;
+  }
 `;

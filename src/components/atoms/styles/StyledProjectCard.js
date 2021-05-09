@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+
 export const StyledProjectCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -9,7 +11,7 @@ export const StyledProjectCardWrapper = styled.div`
   margin: 45px auto 30px;
   text-align: center;
   transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 
   /* border: 1px solid black; */

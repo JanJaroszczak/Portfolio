@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+
 export const StyledSectionWrapper = styled.section`
   position: relative;
   display: grid;
@@ -19,7 +21,7 @@ export const StyledImageColumn = styled.div`
 export const StyledImg = styled.img`
   width: 100%;
   transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 `;
 
@@ -35,6 +37,6 @@ export const StyledSectionParagraph = styled.p`
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
   transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 `;

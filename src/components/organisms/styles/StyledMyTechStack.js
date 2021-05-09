@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+
 export const StyledSectionWrapper = styled.section`
   position: relative;
   margin-top: 150px;
@@ -13,7 +15,7 @@ export const StyledSectionHeading = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
   transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 `;
 

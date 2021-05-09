@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+
 export const StyledCommonPageWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -14,8 +16,8 @@ export const StyledSectionTitle = styled.h1`
   left: 40px;
   /* font-size: ${({ theme }) => theme.fontSizes.sl}; */
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
-  color: ${({ theme }) => theme.colors.gray};
-  transform: ${({ visible }) => (visible ? 'translateY(0)' : 'translateY(0)')};
+  transform: ${({ visible }) =>
+    visible ? 'translateY(0)' : `translateY(-${animationOffset})`};
   transition: 1s;
 `;
 
@@ -25,6 +27,6 @@ export const StyledSectionHeading = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
   transform: ${({ visible }) =>
-    visible ? 'translateY(0)' : 'translateY(60px)'};
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 `;
