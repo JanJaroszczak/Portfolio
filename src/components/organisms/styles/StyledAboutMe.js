@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
-import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+import {
+  animationOffset,
+  sectionsGap,
+} from '../../../helpers/elementsCSSVariables';
 
 export const StyledSectionWrapper = styled.section`
   position: relative;
   display: grid;
   grid-template-columns: 3fr 4fr;
-  margin-top: 150px;
+  margin-bottom: ${sectionsGap};
   border: 8px solid ${({ theme }) => theme.colors.gray};
 `;
 

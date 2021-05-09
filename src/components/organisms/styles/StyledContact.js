@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+import { animationOffset } from '../../../helpers/elementsCSSVariables';
 
 export const StyledSectionWrapper = styled.section`
   position: relative;
-  margin-top: 150px;
   padding: 0 30px 40px;
   border: 8px solid ${({ theme }) => theme.colors.gray};
 `;

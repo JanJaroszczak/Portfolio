@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
-import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+import {
+  animationOffset,
+  sectionsGap,
+} from '../../../helpers/elementsCSSVariables';
 
 export const StyledSectionWrapper = styled.section`
   position: relative;
-  margin-top: 150px;
+  margin-bottom: ${sectionsGap};
   padding: 0 30px 40px;
   border: 8px solid ${({ theme }) => theme.colors.gray};
 `;

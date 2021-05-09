@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { animationOffset } from '../../../helpers/elementsAnimationOffset';
+import { animationOffset } from '../../../helpers/elementsCSSVariables';
 
 export const StyledCommonPageWrapper = styled.div`
   max-width: 1200px;
