@@ -25,7 +25,7 @@ const Header = ({ particlesInit, particlesLoaded }) => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={headerBackgroundOptions}
-        height={'100vh'}
+        height={'calc(100vh - 70px)'}
         width={'100%'}
       />
       <StyledHeadingWrapper>

@@ -52,10 +52,8 @@ p {
 .scroll-target::before {
   content:"";
   display:block;
-  height:80px; 
-  /* fixed header height */
-  margin:-80px 0 0; 
-  /* negative fixed header height */
+  height: 150px; 
+  margin: -150px 0 0; 
 }
 `;
 

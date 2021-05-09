@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import Navbar from '../components/organisms/navigations/Navbar';
 import Footer from '../components/organisms/navigations/Footer';
 import GlobalStyle from '../globalStyles/GlobalStyles';
 
@@ -13,7 +14,7 @@ const MainTemplate = ({ children }) => {
     <>
       <GlobalStyle />
       <ThemeProvider theme={mainTheme}>
-        {/* <Navbar /> */}
+        <Navbar />
         <StyledPageContentWrapper>{children}</StyledPageContentWrapper>
         <Footer />
       </ThemeProvider>

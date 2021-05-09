@@ -13,6 +13,7 @@ export const mainTheme = {
     xs: '1.3rem',
     s: '1.7rem',
     m: '2rem',
+    l: '2.2rem',
     xl: '4rem',
     xxl: '5rem',
     sl: '7rem',

@@ -4,8 +4,8 @@ import { sectionsGap } from '../../../helpers/elementsCSSVariables';
 
 export const StyledHeaderWrapper = styled.div`
   position: relative;
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh; */
+  /* width: 100%; */
   margin-bottom: ${sectionsGap};
 `;
 
