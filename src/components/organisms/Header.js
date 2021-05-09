@@ -8,10 +8,10 @@ import {
   StyledHeadingWrapper,
   StyledHeading,
   StyledSubHeading,
-  StyledArrowButton,
+  StyledArrowLink,
 } from './styles/StyledHeader';
 
-const Header = ({ particlesInit, particlesLoaded, onArrowButton }) => {
+const Header = ({ particlesInit, particlesLoaded }) => {
   const [isFadeIn, setIsFadeIn] = useState(false);
 
   useEffect(() => {
@@ -34,9 +34,9 @@ const Header = ({ particlesInit, particlesLoaded, onArrowButton }) => {
           Front-end Developer
         </StyledSubHeading>
       </StyledHeadingWrapper>
-      <StyledArrowButton onClick={() => onArrowButton()}>
+      <StyledArrowLink href="#about-me">
         <i className="fas fa-chevron-down"></i>
-      </StyledArrowButton>
+      </StyledArrowLink>
     </StyledHeaderWrapper>
   );
 };

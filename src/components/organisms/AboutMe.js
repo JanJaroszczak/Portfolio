@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 import useOnScreen from '../../utils/useOnScreen';
 
@@ -17,13 +17,12 @@ import {
 
 import devices from '../../assets/devices.png';
 
-const AboutMe = ({ aboutMeOffsetTop }) => {
+const AboutMe = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [isImageVisible, setIsImageVisible] = useState(false);
   const [isHeadingVisible, setIsHeadingVisible] = useState(false);
   const [isParagraphVisible, setIsParagraphVisible] = useState(false);
 
-  const aboutMeRef = useRef();
   const titleRef = useRef();
   const imageRef = useRef();
   const headingRef = useRef();
@@ -50,15 +49,9 @@ const AboutMe = ({ aboutMeOffsetTop }) => {
     if (!isParagraphVisible) setIsParagraphVisible(true);
   }
 
-  useEffect(() => {
-    aboutMeOffsetTop(aboutMeRef.current.offsetTop);
-    window.onresize = () => {
-      aboutMeOffsetTop(aboutMeRef.current.offsetTop);
-    };
-  }, []);
-
   return (
-    <StyledCommonPageWrapper ref={aboutMeRef}>
+    <StyledCommonPageWrapper>
+      <a id="about-me" className="scroll-target" />
       <StyledSectionWrapper>
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
           About me.

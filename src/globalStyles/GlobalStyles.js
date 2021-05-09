@@ -12,6 +12,7 @@ html{
   font-size: 62.5%;
   font-weight: 300;
   color: #2e2a2a;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -46,6 +47,15 @@ h4 {
 
 p {
   font-size: 2rem;
+}
+
+.scroll-target::before {
+  content:"";
+  display:block;
+  height:80px; 
+  /* fixed header height */
+  margin:-80px 0 0; 
+  /* negative fixed header height */
 }
 `;
 

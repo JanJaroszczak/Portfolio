@@ -148,6 +148,7 @@ const Contact = () => {
 
   return (
     <StyledCommonPageWrapper>
+      <a id="contact" className="scroll-target" />
       <StyledSectionWrapper>
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
           Contact.

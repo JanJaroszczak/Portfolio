@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
+import { sectionsGap } from '../../../helpers/elementsCSSVariables';
+
 export const StyledHeaderWrapper = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
+  margin-bottom: ${sectionsGap};
 `;
 
 export const StyledHeadingWrapper = styled.div`
@@ -34,7 +37,7 @@ export const StyledSubHeading = styled.h2`
   transition-delay: 0.5s;
 `;
 
-export const StyledArrowButton = styled.button`
+export const StyledArrowLink = styled.a`
   position: absolute;
   left: 50%;
   bottom: 30px;

@@ -24,6 +24,7 @@ const MyProjects = () => {
 
   return (
     <StyledCommonPageWrapper>
+      <a id="my-projects" className="scroll-target" />
       <StyledSectionWrapper>
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
           My projects.

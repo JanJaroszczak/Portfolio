@@ -129,6 +129,7 @@ const MyTechStack = () => {
 
   return (
     <StyledCommonPageWrapper>
+      <a id="my-tech-stack" className="scroll-target" />
       <StyledSectionWrapper>
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
           My tech stack.
