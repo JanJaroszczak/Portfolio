@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 import { Formik, Form, ErrorMessage } from 'formik';
+import { useDispatch } from 'react-redux';
 
 import Alert from '../atoms/Alert';
 import Button from '../atoms/Button';
@@ -9,6 +10,7 @@ import Input from '../atoms/Input';
 import useOnScreen from '../../utils/useOnScreen';
 
 import { contactFormStrings } from './helpers/contactFormStrings';
+import { toggleTermsModal } from '../../store/actions';
 
 import {
   StyledCommonPageWrapper,
@@ -93,6 +95,8 @@ const Contact = () => {
   if (isSubSection2OnScreen) {
     if (!isSubSection2Visible) setIsSubSection2Visible(true);
   }
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     let timer;
@@ -236,7 +240,7 @@ const Contact = () => {
                     <StyledCheckboxLabel>
                       <StyledTermsButton
                         type="button"
-                        // onClick={() => dispatch(isTermsModalOpen(true))}
+                        onClick={() => dispatch(toggleTermsModal(true))}
                       >
                         {termsLabel}
                       </StyledTermsButton>

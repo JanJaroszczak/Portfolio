@@ -1,7 +1,7 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-// import { isTermsModalOpen } from '../../../actions';
+import { toggleTermsModal } from '../../../store/actions';
 
 import {
   StyledFooter,
@@ -11,16 +11,14 @@ import {
 } from './styles/StyledFooter';
 
 const Footer = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <StyledFooter>
       <StyledUl>
         <StyledLi>{`Copyright \u00A9 ${new Date().getFullYear()} Jan Jaroszczak`}</StyledLi>
         <StyledLi>
-          <StyledFooterButton
-          // onClick={() => dispatch(isTermsModalOpen(true))}
-          >
+          <StyledFooterButton onClick={() => dispatch(toggleTermsModal(true))}>
             Terms and Conditions
           </StyledFooterButton>
         </StyledLi>

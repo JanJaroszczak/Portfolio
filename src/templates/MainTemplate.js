@@ -1,9 +1,11 @@
 import React from 'react';
+// import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { ThemeProvider } from 'styled-components';
 
 import Navbar from '../components/organisms/navigations/Navbar';
 import Footer from '../components/organisms/navigations/Footer';
-import GlobalStyle from '../globalStyles/GlobalStyles';
+import GlobalStyle from '../globalStyles/GlobalStyle';
+import TermsModal from '../components/organisms/TermsModal';
 
 import { mainTheme } from '../themes/mainTheme';
 
@@ -15,9 +17,15 @@ const MainTemplate = ({ children }) => {
       <GlobalStyle />
       <ThemeProvider theme={mainTheme}>
         <Navbar />
-        <StyledPageContentWrapper>{children}</StyledPageContentWrapper>
+        <StyledPageContentWrapper>
+          <TermsModal />
+          {children}
+        </StyledPageContentWrapper>
         <Footer />
       </ThemeProvider>
+      {/* <ScrollUpButton
+        style={{ outline: 'none', WebkitTapHighlightColor: 'transparent' }}
+      /> */}
     </>
   );
 };

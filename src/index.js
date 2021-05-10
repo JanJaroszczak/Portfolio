@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import Root from './root/Root';
+import store from './store';
 import { BrowserRouter } from 'react-router-dom';
 
 // import reportWebVitals from './reportWebVitals';
@@ -8,7 +10,9 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
   // <React.StrictMode>
   <BrowserRouter>
-    <Root />
+    <Provider store={store}>
+      <Root />
+    </Provider>
   </BrowserRouter>,
   // </React.StrictMode>,
   document.getElementById('root')
