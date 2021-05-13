@@ -48,7 +48,7 @@ export const StyledDuringDevLabel = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  width: 500px;
+  max-width: 500px;
   transition: 0.3s;
 
   /* border: 1px solid black; */

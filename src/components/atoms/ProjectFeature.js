@@ -9,7 +9,7 @@ import {
   StyledGIF,
 } from './styles/StyledProjectFeature';
 
-const ProjectFeature = ({ featureDescription, gif, gifAlt }) => {
+const ProjectFeature = ({ featureDescription, gif, gifAlt, verticalGIF }) => {
   const [isFeatureVisible, setIsFeatureVisible] = useState(false);
 
   const featureRef = useRef();
@@ -25,8 +25,10 @@ const ProjectFeature = ({ featureDescription, gif, gifAlt }) => {
       <StyledProjectFeature>
         <i className="fas fa-check"></i>
         <p>{featureDescription}</p>
-        <StyledGIFWrapper>
-          <StyledGIF src={gif} alt={gifAlt} />
+        <StyledGIFWrapper gif={gif}>
+          {gif && (
+            <StyledGIF src={gif} alt={gifAlt} verticalGIF={verticalGIF} />
+          )}
         </StyledGIFWrapper>
       </StyledProjectFeature>
     </StyledLi>

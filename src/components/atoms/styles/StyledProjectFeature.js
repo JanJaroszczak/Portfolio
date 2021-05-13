@@ -26,10 +26,15 @@ export const StyledProjectFeature = styled.div`
 
 export const StyledGIFWrapper = styled.div`
   grid-area: gif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
+  margin-top: ${({ gif }) => (gif ? '20px' : '0')};
 `;
 
 export const StyledGIF = styled.img`
   width: 100%;
+  max-width: ${({ verticalGIF }) => (verticalGIF ? '350px' : 'none')};
   border: 1px solid ${({ theme }) => theme.colors.gray};
 `;
