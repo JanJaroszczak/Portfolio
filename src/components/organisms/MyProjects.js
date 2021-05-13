@@ -3,13 +3,15 @@ import React, { useState, useRef } from 'react';
 import ProjectCard from '../atoms/ProjectCard';
 import useOnScreen from '../../utils/useOnScreen';
 
+import { routes } from '../../routes';
+
 import {
   StyledCommonPageWrapper,
   StyledSectionTitle,
-} from './styles/StyledCommonElements';
+} from '../../globalStyles/StyledCommonElements';
 import { StyledSectionWrapper } from './styles/StyledMyProjects';
 
-import project1 from '../../assets/online_shop.gif';
+import onlineShop from '../../assets/onlineShop/desktop_full_small.gif';
 import project2 from '../../assets/cms.png';
 
 const MyProjects = () => {
@@ -31,9 +33,10 @@ const MyProjects = () => {
           My projects.
         </StyledSectionTitle>
         <ProjectCard
-          img={project1}
+          img={onlineShop}
           alt="Online Shop GIF"
           projectLabel="Online Shop"
+          link={routes.onlineShop}
         />
         <ProjectCard
           img={project2}

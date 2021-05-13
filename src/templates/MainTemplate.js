@@ -1,5 +1,5 @@
-import React from 'react';
-// import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import React, { useState } from 'react';
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { ThemeProvider } from 'styled-components';
 
 import Navbar from '../components/organisms/navigations/Navbar';
@@ -11,7 +11,11 @@ import { mainTheme } from '../themes/mainTheme';
 
 import { StyledPageContentWrapper } from './styles/StyledMainTemplate';
 
+import { animateScroll as scroll } from 'react-scroll';
+
 const MainTemplate = ({ children }) => {
+  const [isScrollVisible, setIsScrollVisible] = useState(false);
+
   return (
     <>
       <GlobalStyle />
@@ -23,9 +27,16 @@ const MainTemplate = ({ children }) => {
         </StyledPageContentWrapper>
         <Footer />
       </ThemeProvider>
-      {/* <ScrollUpButton
+
+      {/* <button
+        onClick={() => scroll.scrollToTop()}
+        style={{ position: 'fixed', bottom: '0', right: '4%' }}
+      >
+        go to top
+      </button> */}
+      <ScrollUpButton
         style={{ outline: 'none', WebkitTapHighlightColor: 'transparent' }}
-      /> */}
+      />
     </>
   );
 };

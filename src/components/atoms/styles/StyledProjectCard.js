@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { animationOffset } from '../../../helpers/elementsCSSVariables';
 
@@ -47,7 +48,7 @@ export const StyledDuringDevLabel = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  width: 400px;
+  width: 500px;
   transition: 0.3s;
 
   /* border: 1px solid black; */
@@ -63,4 +64,9 @@ export const StyledProjectName = styled.h3`
   padding-top: 15px;
 
   /* border: 1px solid black; */
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;

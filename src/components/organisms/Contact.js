@@ -15,7 +15,7 @@ import { toggleTermsModal } from '../../store/actions';
 import {
   StyledCommonPageWrapper,
   StyledSectionTitle,
-} from './styles/StyledCommonElements';
+} from '../../globalStyles/StyledCommonElements';
 import {
   StyledSectionWrapper,
   StyledContactHeading,

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export const StyledNav = styled.nav`
   position: fixed;
@@ -37,7 +38,20 @@ export const StyledLi = styled.li`
   /* border: 1px solid white; */
 `;
 
-export const StyledNavLink = styled.a`
+// export const StyledNavLink = styled.a`
+//   font-size: ${({ theme }) => theme.fontSizes.l};
+//   font-weight: ${({ theme }) => theme.fontWeights.extraLight};
+//   color: ${({ theme }) => theme.colors.white};
+//   text-decoration: none;
+//   transition: 0.3s;
+
+//   &:hover,
+//   &:active {
+//     color: ${({ theme }) => theme.colors.lightGray};
+//   }
+// `;
+
+export const StyledNavLink = styled(Link)`
   font-size: ${({ theme }) => theme.fontSizes.l};
   font-weight: ${({ theme }) => theme.fontWeights.extraLight};
   color: ${({ theme }) => theme.colors.white};

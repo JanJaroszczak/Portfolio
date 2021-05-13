@@ -6,7 +6,8 @@ import {
   StyledCommonPageWrapper,
   StyledSectionTitle,
   StyledSectionHeading,
-} from './styles/StyledCommonElements';
+} from '../../globalStyles/StyledCommonElements';
+
 import {
   StyledSectionWrapper,
   StyledImageColumn,

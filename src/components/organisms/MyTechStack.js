@@ -21,7 +21,7 @@ import useOnScreen from '../../utils/useOnScreen';
 import {
   StyledCommonPageWrapper,
   StyledSectionTitle,
-} from './styles/StyledCommonElements';
+} from '../../globalStyles/StyledCommonElements';
 import {
   StyledSectionWrapper,
   StyledSectionHeading,
