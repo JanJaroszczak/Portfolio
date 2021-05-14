@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { animationOffset } from '../../../helpers/elementsCSSVariables';
@@ -8,14 +8,20 @@ export const StyledProjectCardWrapper = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   /* height: 200px; */
-  /* width: 160px; */
-  margin: 45px auto 30px;
+  max-width: 500px;
+  margin: 0 auto 30px;
   text-align: center;
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
 
   /* border: 1px solid black; */
+
+  ${({ center }) =>
+    center &&
+    css`
+      grid-column: 1/3;
+    `}
 `;
 
 export const StyledImageWrapper = styled.div`
@@ -48,7 +54,7 @@ export const StyledDuringDevLabel = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  max-width: 500px;
+  max-width: 100%;
   transition: 0.3s;
 
   /* border: 1px solid black; */

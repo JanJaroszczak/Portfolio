@@ -11,8 +11,9 @@ import {
 } from '../../globalStyles/StyledCommonElements';
 import { StyledSectionWrapper } from './styles/StyledMyProjects';
 
+import cms from '../../assets/cms.png';
 import onlineShop from '../../assets/onlineShop/desktop_full_small.gif';
-import project2 from '../../assets/cms.png';
+import psychologist from '../../assets/psychologist.jpg';
 
 const MyProjects = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
@@ -39,10 +40,17 @@ const MyProjects = () => {
           link={routes.onlineShop}
         />
         <ProjectCard
-          img={project2}
-          alt="CMS for E-Commerce GIF"
-          projectLabel="E-Commerce CMS"
+          img={cms}
+          alt="CMS for E-Commerce logo"
+          projectLabel="CMS for E-Commerce"
           duringDev
+        />
+        <ProjectCard
+          img={psychologist}
+          alt="Psychologist Website logo"
+          projectLabel="Psychologist Commercial Website"
+          duringDev
+          center
         />
       </StyledSectionWrapper>
     </StyledCommonPageWrapper>

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 import useOnScreen from '../../utils/useOnScreen';
-import { animateScroll as scroll } from 'react-scroll';
 import {
   StyledProjectCardWrapper,
   StyledImageWrapper,
@@ -11,7 +11,14 @@ import {
   StyledLink,
 } from './styles/StyledProjectCard';
 
-const ProjectCard = ({ img, imgAlt, projectLabel, duringDev, link }) => {
+const ProjectCard = ({
+  img,
+  imgAlt,
+  projectLabel,
+  duringDev,
+  center,
+  link,
+}) => {
   const [isCardVisible, setIsCardVisible] = useState(false);
 
   const cardRef = useRef();
@@ -23,7 +30,11 @@ const ProjectCard = ({ img, imgAlt, projectLabel, duringDev, link }) => {
   }
 
   return (
-    <StyledProjectCardWrapper ref={cardRef} visible={isCardVisible}>
+    <StyledProjectCardWrapper
+      ref={cardRef}
+      visible={isCardVisible}
+      center={center}
+    >
       <StyledImageWrapper>
         {link ? (
           <StyledLink to={link} onClick={() => scroll.scrollToTop()}>
@@ -40,7 +51,9 @@ const ProjectCard = ({ img, imgAlt, projectLabel, duringDev, link }) => {
       </StyledImageWrapper>
       {link ? (
         <StyledProjectName>
-          <StyledLink to={link}>{projectLabel}</StyledLink>
+          <StyledLink to={link} onClick={() => scroll.scrollToTop()}>
+            {projectLabel}
+          </StyledLink>
         </StyledProjectName>
       ) : (
         <StyledProjectName>{projectLabel}</StyledProjectName>
