@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Particles from 'react-tsparticles';
+import { useMediaQuery } from 'react-responsive';
 
 import { headerBackgroundOptions } from './helpers/headerBackgroundOptions';
 
@@ -18,6 +19,10 @@ const Header = ({ particlesInit, particlesLoaded }) => {
     setIsFadeIn(true);
   }, []);
 
+  const isDesktopNavbar = useMediaQuery({
+    query: '(min-width: 491px)',
+  });
+
   return (
     <StyledHeaderWrapper>
       <Particles
@@ -25,7 +30,7 @@ const Header = ({ particlesInit, particlesLoaded }) => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={headerBackgroundOptions}
-        height={'calc(100vh - 70px)'}
+        height={`calc(100vh - ${isDesktopNavbar ? 70 : 0}px)`}
         width={'100%'}
       />
       <StyledHeadingWrapper>

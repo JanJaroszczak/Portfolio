@@ -81,14 +81,14 @@ export const StyledTextarea = styled.textarea`
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transition: 0.5s;
 
+  /* @media (max-width: 1024px) {
+    width: 100%;
+  } ; */
+
   &:focus {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  } ;
 `;
 
 export const StyledTermsWrapper = styled.div`

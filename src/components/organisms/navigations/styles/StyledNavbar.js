@@ -46,17 +46,17 @@ export const StyledRouterNavLink = styled(NavLink)`
   transition: 0.3s;
   cursor: pointer;
 
-  &:hover,
-  &:active {
-    color: ${({ theme }) => theme.colors.lightGray};
-  }
-
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.s};
   }
 
   @media (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSizes.xs};
+  }
+
+  &:hover,
+  &:active {
+    color: ${({ theme }) => theme.colors.lightGray};
   }
 `;
 
@@ -68,16 +68,16 @@ export const StyledNavLink = styled(Link)`
   transition: 0.3s;
   cursor: pointer;
 
-  &:hover,
-  &:active {
-    color: ${({ theme }) => theme.colors.lightGray};
-  }
-
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.s};
   }
 
   @media (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSizes.xs};
+  }
+
+  &:hover,
+  &:active {
+    color: ${({ theme }) => theme.colors.lightGray};
   }
 `;
