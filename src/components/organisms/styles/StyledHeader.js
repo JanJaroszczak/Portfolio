@@ -27,6 +27,14 @@ export const StyledHeading = styled.h1`
   letter-spacing: 2px;
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
+
+  @media (max-width: 600px) {
+    font-size: ${({ theme }) => theme.fontSizes.sl};
+  }
+
+  @media (max-width: 400px) {
+    font-size: ${({ theme }) => theme.fontSizes.xxl};
+  }
 `;
 
 export const StyledSubHeading = styled.h2`
@@ -36,6 +44,14 @@ export const StyledSubHeading = styled.h2`
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
   transition-delay: 0.5s;
+
+  @media (max-width: 600px) {
+    font-size: ${({ theme }) => theme.fontSizes.xxl};
+  }
+
+  @media (max-width: 400px) {
+    font-size: ${({ theme }) => theme.fontSizes.xl};
+  }
 `;
 
 export const StyledArrowLink = styled(Link)`
@@ -45,7 +61,7 @@ export const StyledArrowLink = styled(Link)`
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
-  font-size: ${({ theme }) => theme.fontSizes.xxl};
+  font-size: ${({ theme }) => theme.fontSizes.headerArrow};
   color: white;
   cursor: pointer;
 

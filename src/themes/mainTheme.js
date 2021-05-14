@@ -18,9 +18,10 @@ export const mainTheme = {
     m: '2rem',
     l: '2.2rem',
     xl: '2.7rem',
-    xxl: '5rem',
-    sl: '7rem',
+    xxl: '3.5rem',
+    sl: '5rem',
     goBackArrow: '3.5rem',
+    headerArrow: '5rem',
   },
 
   fontWeights: {
