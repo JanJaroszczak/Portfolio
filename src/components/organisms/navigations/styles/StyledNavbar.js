@@ -31,6 +31,8 @@ export const StyledUl = styled.ul`
 `;
 
 export const StyledLi = styled.li`
+  margin-right: 10px;
+
   &:not(:last-child) {
     margin-right: 40px;
   }
