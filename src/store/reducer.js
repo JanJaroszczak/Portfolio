@@ -2,6 +2,7 @@ import { actionsTypes } from './actions/actionsTypes';
 
 const intitialState = {
   isTermsModalOpen: false,
+  isHomePageOpen: false,
 };
 
 const reducer = (state = intitialState, action) => {
@@ -13,6 +14,13 @@ const reducer = (state = intitialState, action) => {
         ...state,
         isTermsModalOpen: payload,
       };
+
+    case actionsTypes.TOGGLE_IS_HOME_PAGE_OPEN:
+      return {
+        ...state,
+        isHomePageOpen: payload,
+      };
+
     default:
       return state;
   }

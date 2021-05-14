@@ -34,7 +34,14 @@ const Header = ({ particlesInit, particlesLoaded }) => {
           Front-end Developer
         </StyledSubHeading>
       </StyledHeadingWrapper>
-      <StyledArrowLink href="#about-me">
+      <StyledArrowLink
+        to="about-me"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
         <i className="fas fa-chevron-down"></i>
       </StyledArrowLink>
     </StyledHeaderWrapper>

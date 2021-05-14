@@ -1,8 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { useDispatch } from 'react-redux';
 
 import ProjectHeader from '../molecules/ProjectHeader';
 import ProjectFeatures from '../molecules/ProjectFeatures';
 import useOnScreen from '../../utils/useOnScreen';
+
+import { toggleIsHomePageOpen } from '../../store/actions';
 
 import {
   StyledCommonPageWrapper,
@@ -21,11 +24,24 @@ const Project = ({ projectMainInfo, projectFeatures }) => {
     if (!isTitleVisible) setIsTitleVisible(true);
   }
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(toggleIsHomePageOpen(false));
+  }, []);
+
   return (
     <StyledCommonPageWrapper>
       <a id="project" className="scroll-target" />
       <StyledSectionWrapper>
-        <StyledGoBackLink href="/#my-projects">
+        <StyledGoBackLink
+          to={{
+            pathname: '/',
+            state: {
+              scrollTarget: 'my-projects',
+            },
+          }}
+        >
           <i className="fas fa-arrow-left"></i>
         </StyledGoBackLink>
         <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
@@ -33,7 +49,15 @@ const Project = ({ projectMainInfo, projectFeatures }) => {
         </StyledSectionTitle>
         <ProjectHeader {...projectMainInfo} />
         <ProjectFeatures projectFeatures={projectFeatures} />
-        <StyledGoBackLink href="/#my-projects" bottom>
+        <StyledGoBackLink
+          to={{
+            pathname: '/',
+            state: {
+              scrollTarget: 'my-projects',
+            },
+          }}
+          bottom
+        >
           <i className="fas fa-arrow-left"></i>
         </StyledGoBackLink>
       </StyledSectionWrapper>

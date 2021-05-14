@@ -12,7 +12,7 @@ const Router = () => {
   return (
     <Switch>
       <Route exact path={home} component={HomePage} />
-      <Route exact path={onlineShop} component={OnlineShop} />
+      <Route path={onlineShop} component={OnlineShop} />
     </Switch>
   );
 };

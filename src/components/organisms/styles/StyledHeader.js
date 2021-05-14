@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 import { sectionsGap } from '../../../helpers/elementsCSSVariables';
 
@@ -37,7 +38,7 @@ export const StyledSubHeading = styled.h2`
   transition-delay: 0.5s;
 `;
 
-export const StyledArrowLink = styled.a`
+export const StyledArrowLink = styled(Link)`
   position: absolute;
   left: 50%;
   bottom: 30px;
@@ -46,6 +47,7 @@ export const StyledArrowLink = styled.a`
   border: none;
   font-size: ${({ theme }) => theme.fontSizes.xxl};
   color: white;
+  cursor: pointer;
 
   & i {
     transform: translateY(-40px);
