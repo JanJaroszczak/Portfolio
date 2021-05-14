@@ -6,6 +6,10 @@ export const StyledSectionWrapper = styled.section`
   position: relative;
   padding: 0 30px 40px;
   border: 8px solid ${({ theme }) => theme.colors.gray};
+
+  @media (max-width: 480px) {
+    border: 5px solid ${({ theme }) => theme.colors.gray};
+  }
 `;
 
 export const StyledContactHeading = styled.h4`

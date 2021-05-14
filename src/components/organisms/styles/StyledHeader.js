@@ -1,13 +1,30 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
-import { sectionsGap } from '../../../helpers/elementsCSSVariables';
+import {
+  sectionsGap,
+  sectionGap650px,
+  sectionGap520px,
+  sectionGap480px,
+} from '../../../helpers/elementsCSSVariables';
 
 export const StyledHeaderWrapper = styled.div`
   position: relative;
   /* height: 100vh; */
   /* width: 100%; */
   margin-bottom: ${sectionsGap};
+
+  @media (max-width: 650px) {
+    margin-bottom: ${sectionGap650px};
+  }
+
+  @media (max-width: 520px) {
+    margin-bottom: ${sectionGap520px};
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: ${sectionGap480px};
+  }
 `;
 
 export const StyledHeadingWrapper = styled.div`
