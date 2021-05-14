@@ -55,7 +55,7 @@ export const StyledErrorWrapper = styled.div`
   position: absolute;
   bottom: ${({ textarea }) => (textarea ? '-30px' : '-22px')};
   left: 5px;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   color: ${({ theme }) => theme.colors.error};
 
   /* border: 1px solid black; */
@@ -75,7 +75,7 @@ export const StyledTextarea = styled.textarea`
   resize: vertical;
   font-family: inherit;
   background-color: transparent;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;

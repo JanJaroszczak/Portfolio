@@ -15,7 +15,7 @@ export const StyledTermsHeading = styled.h3`
 export const StyledParagraph = styled.p`
   margin-bottom: 15px;
   padding: 0 30px;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
 `;

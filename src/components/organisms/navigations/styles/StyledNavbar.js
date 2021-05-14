@@ -50,6 +50,14 @@ export const StyledRouterNavLink = styled(NavLink)`
   &:active {
     color: ${({ theme }) => theme.colors.lightGray};
   }
+
+  @media (max-width: 650px) {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
+
+  @media (max-width: 540px) {
+    font-size: ${({ theme }) => theme.fontSizes.xs};
+  }
 `;
 
 export const StyledNavLink = styled(Link)`
@@ -63,5 +71,13 @@ export const StyledNavLink = styled(Link)`
   &:hover,
   &:active {
     color: ${({ theme }) => theme.colors.lightGray};
+  }
+
+  @media (max-width: 650px) {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
+
+  @media (max-width: 540px) {
+    font-size: ${({ theme }) => theme.fontSizes.xs};
   }
 `;

@@ -27,7 +27,7 @@ export const StyledInput = styled.input`
   padding: 0 10px;
   font-family: inherit;
   background-color: transparent;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -43,6 +43,6 @@ export const StyledErrorWrapper = styled.div`
   position: absolute;
   bottom: -8px;
   left: 5px;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   color: ${({ theme }) => theme.colors.error};
 `;

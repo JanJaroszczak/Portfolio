@@ -13,7 +13,8 @@ export const mainTheme = {
   },
 
   fontSizes: {
-    xs: '1.3rem',
+    xxs: '1.3rem',
+    xs: '1.5rem',
     s: '1.7rem',
     m: '2rem',
     l: '2.2rem',

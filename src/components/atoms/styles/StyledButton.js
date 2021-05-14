@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
   display: inline-block;
   padding: 7px 15px;
   background-color: ${({ theme }) => theme.colors.gray};
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   color: ${({ theme }) => theme.colors.white};
   text-transform: capitalize;
   border: none;

@@ -9,7 +9,7 @@ export const StyledAlert = styled.div`
   /* margin: 15px 0; */
   margin-left: 40px;
   padding-right: 15px;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
+  font-size: ${({ theme }) => theme.fontSizes.xxs};
   font-weight: ${({ theme }) => theme.fontWeights.regular};
 
   line-height: 40px;
@@ -30,7 +30,7 @@ export const StyledAlert = styled.div`
     `}
 
   @media (max-width: 310px) {
-    font-size: ${({ theme }) => theme.fontSizes.xs};
+    font-size: ${({ theme }) => theme.fontSizes.xxs};
 
     i {
       margin: 0 10px;
