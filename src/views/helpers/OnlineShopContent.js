@@ -67,10 +67,4 @@ export const onlineShopFeatures = [
     gifAlt: 'products gif',
     verticalGIF: true,
   },
-  {
-    featureDescription:
-      'The project has a fully responsive design – from 280px foldable mobiles to desktops.',
-    gif: false,
-    gifAlt: 'products gif',
-  },
 ];
