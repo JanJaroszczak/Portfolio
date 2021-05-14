@@ -44,3 +44,12 @@ export const StyledFooterButton = styled.button`
     font-size: ${({ theme }) => theme.fontSizes.ss};
   } */
 `;
+
+export const StyledLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+
+  i {
+    margin-right: 5px;
+  }
+`;

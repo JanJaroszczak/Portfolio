@@ -8,6 +8,7 @@ import {
   StyledUl,
   StyledLi,
   StyledFooterButton,
+  StyledLink,
 } from './styles/StyledFooter';
 
 const Footer = () => {
@@ -21,6 +22,15 @@ const Footer = () => {
           <StyledFooterButton onClick={() => dispatch(toggleTermsModal(true))}>
             Terms and Conditions
           </StyledFooterButton>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink
+            href={'https://github.com/JanJaroszczak/Portfolio'}
+            target="_blank"
+          >
+            <i className="fab fa-github"></i>
+            This Portfolio GitHub
+          </StyledLink>
         </StyledLi>
       </StyledUl>
     </StyledFooter>
