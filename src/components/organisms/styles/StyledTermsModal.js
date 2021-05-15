@@ -7,7 +7,7 @@ export const StyledTermsWrapper = styled.div`
 
 export const StyledTermsHeading = styled.h3`
   font-weight: ${({ theme }) => theme.fontWeights.light};
-  padding: 10px 0;
+  padding: 10px 30px;
 
   /* border: 1px solid black; */
 `;
