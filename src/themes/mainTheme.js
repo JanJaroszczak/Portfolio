@@ -25,6 +25,7 @@ export const mainTheme = {
     sl: '4.3rem',
     ssl: '5rem',
     ul: '6rem',
+    smallGoBackArrow: '2.5rem',
     goBackArrow: '3.5rem',
     headerArrow: '5rem',
   },

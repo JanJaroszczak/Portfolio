@@ -17,6 +17,27 @@ export const StyledProjectFeature = styled.div`
   margin: 20px 0 40px;
   font-weight: ${({ theme }) => theme.fontWeights.light};
 
+  @media (max-width: 480px) {
+    display: block;
+  }
+
+  p {
+    text-align: justify;
+
+    @media (max-width: 770px) {
+      font-size: ${({ theme }) => theme.fontSizes.s};
+    }
+
+    @media (max-width: 480px) {
+      font-size: ${({ theme }) => theme.fontSizes.xs};
+    }
+
+    i {
+      margin-right: 10px;
+      font-size: ${({ theme }) => theme.fontSizes.xxs};
+    }
+  }
+
   i {
     font-size: ${({ theme }) => theme.fontSizes.m};
     margin-top: 4px;
