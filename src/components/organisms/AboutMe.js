@@ -64,8 +64,8 @@ const AboutMe = () => {
             ref={paragraphRef}
             visible={isParagraphVisible}
           >
-            An ex-Logistics &amp; Supply Chain Manager who found passion in Web
-            Development and decided to change his career path. From primary
+            I am an ex-Logistics &amp; Supply Chain Manager who found passion in
+            Web Development and decided to change his career path. From primary
             school until the end of studies I created several small webpages. I
             have always liked doing it, however due to my studies program and
             some other career oportunities I have never dived deeper into Web
