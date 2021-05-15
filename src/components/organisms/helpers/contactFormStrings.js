@@ -3,7 +3,7 @@ export const contactFormStrings = {
   invalidEmail: 'Entered email is invalid',
   emailRequired: 'Please enter your email.',
   messageRequired: 'Please enter a message.',
-  termsAcceptanceRequired: 'You need to accept Terms and Conditions.',
+  termsAcceptanceRequired: 'Please accept Terms and Conditions.',
   nameLabel: '*Name:',
   namePlaceholder: 'Enter your name',
   emailLabel: '*Email:',

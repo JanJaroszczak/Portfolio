@@ -12,6 +12,14 @@ export const StyledButton = styled.button`
   border: none;
   transition: 0.5s;
 
+  @media (max-width: 320px) {
+    padding: 7px 8px;
+  }
+
+  @media (max-width: 300px) {
+    padding: 7px 4px;
+  }
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};
   }

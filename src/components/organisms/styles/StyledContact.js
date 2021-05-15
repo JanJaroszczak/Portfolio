@@ -10,6 +10,10 @@ export const StyledSectionWrapper = styled.section`
   @media (max-width: 480px) {
     border: 5px solid ${({ theme }) => theme.colors.gray};
   }
+
+  @media (max-width: 430px) {
+    padding: 0 15px 30px;
+  }
 `;
 
 export const StyledContactHeading = styled.h4`
@@ -21,6 +25,18 @@ export const StyledContactHeading = styled.h4`
   text-align: center;
 
   /* border: 1px solid black; */
+
+  @media (max-width: 650px) {
+    font-size: ${({ theme }) => theme.fontSizes.l};
+  }
+
+  @media (max-width: 520px) {
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
 `;
 
 export const StyledForm = styled.div`
@@ -37,6 +53,11 @@ export const StyledFormContentWrapper = styled.div`
 export const StyledTextInputsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    /* align-items: center; */
+  }
 `;
 
 export const StyledTextareaWrapper = styled.div`
@@ -63,17 +84,26 @@ export const StyledErrorWrapper = styled.div`
   color: ${({ theme }) => theme.colors.error};
 
   /* border: 1px solid black; */
+
+  @media (max-width: 650px) {
+    font-size: ${({ theme }) => theme.fontSizes.ss};
+    bottom: ${({ textarea }) => (textarea ? '-27px' : '-19px')};
+  }
 `;
 
 export const StyledTextAreaLabel = styled.label`
   display: block;
   margin-bottom: 3px;
   font-size: ${({ theme }) => theme.fontSizes.s};
+
+  @media (max-width: 520px) {
+    font-size: ${({ theme }) => theme.fontSizes.xs};
+  }
 `;
 
 export const StyledTextarea = styled.textarea`
   display: block;
-  width: 600px;
+  width: 100%;
   min-height: 250px;
   padding: 5px 10px;
   resize: vertical;
@@ -118,6 +148,7 @@ export const StyledSubSectionWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  text-align: center;
 
   span {
     margin: 0 20px;
@@ -129,6 +160,10 @@ export const StyledContactLink = styled.a`
   font-size: ${({ theme }) => theme.fontSizes.m};
   color: ${({ theme }) => theme.colors.gray};
   text-decoration: none;
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
 
   i {
     margin-right: 10px;

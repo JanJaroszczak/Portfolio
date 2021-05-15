@@ -3,6 +3,7 @@ import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 import { Formik, Form, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
+import { useMediaQuery } from 'react-responsive';
 
 import Alert from '../atoms/Alert';
 import Button from '../atoms/Button';
@@ -110,6 +111,10 @@ const Contact = () => {
     };
   }, [isSuccessAlert]);
 
+  const is600px = useMediaQuery({
+    query: '(max-width: 600px)',
+  });
+
   const renderSubSection = () => (
     <>
       <StyledSubSectionWrapper
@@ -122,7 +127,10 @@ const Contact = () => {
         <StyledContactLink href={`mailto:${myEmail}`}>
           {myEmail}
         </StyledContactLink>
-        <span>/</span>
+        {is600px ? <br /> : <span>/</span>}
+        {is600px ? <span>/</span> : null}
+        {is600px ? <br /> : null}
+
         <StyledContactLink href={`tel:${myPhoneNumberLink}`}>
           {myPhoneNumberLabel}
         </StyledContactLink>

@@ -10,11 +10,15 @@ export const StyledCommonPageWrapper = styled.div`
   /* border: 1px solid black; */
 
   @media (max-width: 1280px) {
-    padding: 0 60px;
+    padding: 0 40px;
   }
 
   @media (max-width: 800px) {
     padding: 0 20px;
+  }
+
+  @media (max-width: 380px) {
+    padding: 0 10px;
   }
 `;
 

@@ -24,6 +24,7 @@ export const StyledSectionWrapper = styled.section`
 
   @media (max-width: 480px) {
     margin-bottom: ${sectionGap480px};
+    padding: 0 30px 20px;
     border: 5px solid ${({ theme }) => theme.colors.gray};
   }
 `;
@@ -42,6 +43,7 @@ export const StyledSectionHeading = styled.h2`
   }
 
   @media (max-width: 480px) {
+    margin: ${({ tools }) => (tools ? '70px 10px 0' : '20px 10px 20px')};
     font-size: ${({ theme }) => theme.fontSizes.xl};
     font-weight: ${({ theme }) => theme.fontWeights.regular};
   }

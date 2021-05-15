@@ -48,7 +48,7 @@ const MyProjects = () => {
         <ProjectCard
           img={psychologist}
           alt="Psychologist Website logo"
-          projectLabel="Psychologist Commercial Website"
+          projectLabel="Psychologist Website"
           duringDev
           center
         />
