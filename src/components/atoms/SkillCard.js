@@ -17,6 +17,7 @@ const SkillCard = ({
   skillLabel,
   img,
   imgAlt,
+  center,
 }) => {
   const [isCardVisible, setIsCardVisible] = useState(false);
 
@@ -29,7 +30,7 @@ const SkillCard = ({
   }
 
   return (
-    <StyledCardWrapper ref={cardRef} visible={isCardVisible}>
+    <StyledCardWrapper ref={cardRef} visible={isCardVisible} center={center}>
       <StyledIconWrapper>
         {img ? (
           <StyledImg src={img} alt={imgAlt} />

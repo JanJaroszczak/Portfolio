@@ -107,21 +107,21 @@ const MyTechStack = () => {
           iconColor="#0868AB"
         />
       </StyledGridWrapper>
-      <StyledSectionHeading ref={heading2Ref} visible={isHeading2Visible}>
+      <StyledSectionHeading ref={heading2Ref} visible={isHeading2Visible} tools>
         Tools:
       </StyledSectionHeading>
-      <StyledGridWrapper>
+      <StyledGridWrapper tools>
         <SkillCard skillIcon={fileTypeNpm} iconHeight={143} skillLabel="npm" />
         <SkillCard
           skillIcon={webpackIcon}
           iconHeight={150}
           skillLabel="Webpack"
         />
-        <SkillCard skillIcon={gitIcon} iconHeight={130} skillLabel="Git" />
         <SkillCard
-          skillIcon={githubIcon}
-          iconHeight={127}
-          skillLabel="GitHub"
+          skillIcon={gitIcon}
+          iconHeight={130}
+          skillLabel="Git"
+          center
         />
       </StyledGridWrapper>
     </>

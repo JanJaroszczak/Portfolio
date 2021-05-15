@@ -64,7 +64,7 @@ export const StyledSectionHeading = styled.h2`
     font-size: ${({ theme }) => theme.fontSizes.xxl};
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.l};
   }
 `;
