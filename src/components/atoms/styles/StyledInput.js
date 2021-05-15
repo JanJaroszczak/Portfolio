@@ -1,26 +1,14 @@
-import styled, { css } from 'styled-components';
-
-// import { inputVariants } from '../../../helpers/atomsTypesAndVariants';
+import styled from 'styled-components';
 
 export const StyledInputWrapper = styled.div`
   display: inline-block;
   position: relative;
-  /* min-width: 252px;
-  margin-right: 0 auto; */
-
-  /* border: 1px solid black; */
-
-  /* @media (max-width: 650px) {
-    display: block;
-  } */
 `;
 
 export const StyledLabel = styled.label`
   display: block;
   margin-bottom: 3px;
   font-size: ${({ theme }) => theme.fontSizes.s};
-
-  /* border: 1px solid black; */
 
   @media (max-width: 520px) {
     font-size: ${({ theme }) => theme.fontSizes.xs};

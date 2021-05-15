@@ -8,8 +8,6 @@ export const StyledIcon = styled.div`
   right: 25px;
   cursor: pointer;
   z-index: 2;
-
-  /* border: 1px solid white; */
 `;
 
 export const StyledMenu = styled.div`
@@ -33,16 +31,12 @@ export const StyledMenu = styled.div`
 export const StyledUl = styled.ul`
   display: flex;
   flex-direction: column;
-
-  /* border: 1px solid black; */
 `;
 
 export const StyledLi = styled.li`
   align-self: center;
   justify-self: center;
   margin: 0 10px;
-
-  /* border: 1px solid black; */
 `;
 
 export const StyledRouterNavLink = styled(NavLink)`

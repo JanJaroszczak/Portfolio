@@ -10,7 +10,7 @@ import { toggleTermsModal } from '../../store/actions';
 import {
   StyledTermsWrapper,
   StyledTermsHeading,
-  StyledParagraph,
+  StyledTermsContentWrapper,
 } from './styles/StyledTermsModal';
 
 const useStyles = makeStyles((theme) => ({
@@ -59,7 +59,7 @@ const TermsModal = () => {
         <div className={classes.paper}>
           <StyledTermsWrapper>
             <StyledTermsHeading>Terms and Conditions</StyledTermsHeading>
-            <StyledParagraph>
+            <StyledTermsContentWrapper>
               <p>Last updated: May 15, 2021</p>
               <p>
                 This Privacy Policy describes Our policies and procedures on the
@@ -600,7 +600,7 @@ const TermsModal = () => {
                   <p>By phone number: +48 500 170 887</p>
                 </li>
               </ul>
-            </StyledParagraph>
+            </StyledTermsContentWrapper>
           </StyledTermsWrapper>
         </div>
       </Fade>

@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const StyledFooter = styled.footer`
   width: 100%;
@@ -26,16 +25,12 @@ export const StyledUl = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto; */
 
   @media (max-width: 570px) {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    /* grid-template-areas:
-      'copyright terms'
-      'github github'; */
   }
 
   @media (max-width: 330px) {

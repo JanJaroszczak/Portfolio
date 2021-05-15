@@ -174,8 +174,6 @@ const Contact = () => {
           }}
           validationSchema={contactValidationSchema}
           onSubmit={(values, { resetForm }) => {
-            console.log(values);
-
             emailjs
               .send(
                 'contact_service',
@@ -258,11 +256,7 @@ const Contact = () => {
                     </StyledErrorWrapper>
                   </StyledTermsWrapper>
                   <Button type="submit" label={sendMessageButtonLabel} />
-                  <Alert
-                    message={alertMessage}
-                    visible={isSuccessAlert}
-                    // variant={alertVariants.accountDataChange}
-                  />
+                  <Alert message={alertMessage} visible={isSuccessAlert} />
                 </StyledFormContentWrapper>
               </StyledForm>
             </Form>

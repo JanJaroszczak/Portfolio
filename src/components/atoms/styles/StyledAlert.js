@@ -1,12 +1,8 @@
 import styled, { css } from 'styled-components';
 
-// import { alertVariants } from '../../../helpers/atomsTypesAndVariants';
-
 export const StyledAlert = styled.div`
   display: inline-block;
   height: 40px;
-  /* width: 100%; */
-  /* margin: 15px 0; */
   margin-left: 40px;
   padding-right: 15px;
   font-size: ${({ theme }) => theme.fontSizes.xxs};

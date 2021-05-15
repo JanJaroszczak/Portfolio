@@ -24,8 +24,6 @@ export const StyledContactHeading = styled.h4`
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
 
-  /* border: 1px solid black; */
-
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.l};
   }
@@ -56,25 +54,13 @@ export const StyledTextInputsWrapper = styled.div`
 
   @media (max-width: 650px) {
     flex-direction: column;
-    /* align-items: center; */
   }
 `;
 
 export const StyledTextareaWrapper = styled.div`
   position: relative;
   margin-top: 15px;
-
-  /* border: 1px solid black; */
 `;
-
-// export const StyledClientDataInputsWrapper = styled.div`
-//   @media (max-width: 768px) {
-//     max-width: 250px;
-//     margin: 0 auto;
-//   }
-
-//   /* border: 1px solid black; */
-// `;
 
 export const StyledErrorWrapper = styled.div`
   position: absolute;
@@ -82,8 +68,6 @@ export const StyledErrorWrapper = styled.div`
   left: 5px;
   font-size: ${({ theme }) => theme.fontSizes.xxs};
   color: ${({ theme }) => theme.colors.error};
-
-  /* border: 1px solid black; */
 
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.ss};
@@ -115,10 +99,6 @@ export const StyledTextarea = styled.textarea`
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   -webkit-appearance: none;
   transition: 0.5s;
-
-  /* @media (max-width: 1024px) {
-    width: 100%;
-  } ; */
 
   &:focus {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,

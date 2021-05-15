@@ -11,23 +11,14 @@ export const StyledNav = styled.nav`
   background-color: ${({ theme }) => theme.colors.gray};
   border-bottom: 2px solid ${({ theme }) => theme.colors.white};
   z-index: 1;
-
-  /* border: 1px solid black; */
 `;
 
 export const StyledUl = styled.ul`
-  /* display: grid;
-  grid-template-columns: auto auto auto auto; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
-
-  /* flex-grow: 1; */
-  /* flex-shrink: 1; */
   margin: 0 auto;
-
-  /* border: 1px solid white; */
 `;
 
 export const StyledLi = styled.li`
@@ -36,8 +27,6 @@ export const StyledLi = styled.li`
   &:not(:last-child) {
     margin-right: 40px;
   }
-
-  /* border: 1px solid white; */
 `;
 
 export const StyledRouterNavLink = styled(NavLink)`

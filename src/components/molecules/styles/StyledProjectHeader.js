@@ -61,8 +61,6 @@ export const StyledLink = styled.a`
   text-decoration: none;
   color: inherit;
 
-  /* border: 1px solid ${({ theme }) => theme.colors.gray}; */
-
   @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.l};
   }

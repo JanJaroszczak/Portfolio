@@ -10,8 +10,6 @@ import {
 
 export const StyledHeaderWrapper = styled.div`
   position: relative;
-  /* height: 100vh; */
-  /* width: 100%; */
   margin-bottom: ${sectionsGap};
 
   @media (max-width: 650px) {

@@ -15,12 +15,10 @@ import { mainTheme } from '../themes/mainTheme';
 import { StyledPageContentWrapper } from './styles/StyledMainTemplate';
 
 const MainTemplate = ({ children }) => {
-  // const [isScrollVisible, setIsScrollVisible] = useState(false);
   const [mobileMenuOn, setMobileMenuOn] = useState(false);
   const outsideClickRef = useRef();
 
   useOnClickOutside(outsideClickRef, () => {
-    console.log('outside click');
     setMobileMenuOn((prevState) => !prevState);
   });
 
@@ -45,13 +43,6 @@ const MainTemplate = ({ children }) => {
         </StyledPageContentWrapper>
         <Footer />
       </ThemeProvider>
-
-      {/* <button
-        onClick={() => scroll.scrollToTop()}
-        style={{ position: 'fixed', bottom: '0', right: '4%' }}
-      >
-        go to top
-      </button> */}
       <ScrollUpButton
         style={{ outline: 'none', WebkitTapHighlightColor: 'transparent' }}
       />

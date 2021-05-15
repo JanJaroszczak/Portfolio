@@ -31,7 +31,6 @@ export const StyledSectionWrapper = styled.section`
 
 export const StyledSectionHeading = styled.h2`
   margin: ${({ tools }) => (tools ? '70px 10px 0' : '40px 10px 20px')};
-  /* font-size: ${({ theme }) => theme.fontSizes.xl}; */
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
   transform: ${({ visible }) =>

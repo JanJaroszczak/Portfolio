@@ -7,15 +7,12 @@ export const StyledProjectCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
-  /* height: 200px; */
   max-width: 500px;
   margin: 0 auto 30px;
   text-align: center;
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-
-  /* border: 1px solid black; */
 
   ${({ center }) =>
     center &&
@@ -55,7 +52,6 @@ export const StyledProjectCardWrapper = styled.div`
 `;
 
 export const StyledImageWrapper = styled.div`
-  /* align-self: center; */
   position: relative;
   font-size: 0;
   overflow: hidden;
@@ -74,8 +70,6 @@ export const StyledDuringDevLabel = styled.div`
   background-color: ${({ theme }) => theme.colors.moderateGray};
   color: white;
   line-height: 40px;
-  /* vertical-align: 5px; */
-  /* z-index: 100; */
 
   @media (max-width: 480px) {
     height: 30px;
@@ -106,8 +100,6 @@ export const StyledImg = styled.img`
   width: 100%;
   transition: 0.3s;
 
-  /* border: 1px solid black; */
-
   &:hover {
     transform: scale(1.1);
   }
@@ -115,10 +107,7 @@ export const StyledImg = styled.img`
 
 export const StyledProjectName = styled.h3`
   font-weight: ${({ theme }) => theme.fontWeights.light};
-  /* margin-top: auto; */
   padding-top: 15px;
-
-  /* border: 1px solid black; */
 
   @media (max-width: 1200px) {
     font-size: ${({ theme }) => theme.fontSizes.xl};

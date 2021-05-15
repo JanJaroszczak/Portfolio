@@ -26,12 +26,10 @@ const AboutMe = () => {
 
   const titleRef = useRef();
   const imageRef = useRef();
-  // const headingRef = useRef();
   const paragraphRef = useRef();
 
   const isTitleOnScreen = useOnScreen(titleRef);
   const isImageOnScreen = useOnScreen(imageRef);
-  // const isHeadingOnScreen = useOnScreen(headingRef);
   const isParagraphOnScreen = useOnScreen(paragraphRef);
 
   if (isTitleOnScreen) {
@@ -41,10 +39,6 @@ const AboutMe = () => {
   if (isImageOnScreen) {
     if (!isImageVisible) setIsImageVisible(true);
   }
-
-  // if (isHeadingOnScreen) {
-  //   if (!isHeadingVisible) setIsHeadingVisible(true);
-  // }
 
   if (isParagraphOnScreen) {
     if (!isParagraphVisible) setIsParagraphVisible(true);
@@ -66,9 +60,6 @@ const AboutMe = () => {
           />
         </StyledImageColumn>
         <StyledTextColumn>
-          {/* <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
-            Lorem, ipsum dolor.
-          </StyledSectionHeading> */}
           <StyledSectionParagraph
             ref={paragraphRef}
             visible={isParagraphVisible}

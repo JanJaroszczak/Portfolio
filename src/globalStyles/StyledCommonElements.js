@@ -7,8 +7,6 @@ export const StyledCommonPageWrapper = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 
-  /* border: 1px solid black; */
-
   @media (max-width: 1280px) {
     padding: 0 40px;
   }
@@ -26,7 +24,6 @@ export const StyledSectionTitle = styled.h1`
   position: absolute;
   top: -84px;
   left: 40px;
-  /* font-size: ${({ theme }) => theme.fontSizes.sl}; */
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(-${animationOffset})`};
@@ -57,7 +54,6 @@ export const StyledSectionTitle = styled.h1`
 
 export const StyledSectionHeading = styled.h2`
   margin: 30px 10px;
-  /* font-size: ${({ theme }) => theme.fontSizes.xl}; */
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: center;
   transform: ${({ visible }) =>

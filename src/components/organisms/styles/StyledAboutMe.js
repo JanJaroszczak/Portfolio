@@ -42,8 +42,6 @@ export const StyledImageColumn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* border: 1px solid ${({ theme }) => theme.colors.gray}; */
 `;
 
 export const StyledImg = styled.img`
@@ -59,13 +57,10 @@ export const StyledImg = styled.img`
 
 export const StyledTextColumn = styled.div`
   text-align: center;
-
-  /* border: 1px solid ${({ theme }) => theme.colors.gray}; */
 `;
 
 export const StyledSectionParagraph = styled.p`
   margin: 20px 40px 20px;
-  /* font-size: ${({ theme }) => theme.fontSizes.m}; */
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
   transform: ${({ visible }) =>
