@@ -31,8 +31,8 @@ export const StyledSectionWrapper = styled.section`
 
 export const StyledGoBackLink = styled(NavLink)`
   position: absolute;
-  top: ${({ bottom }) => (bottom ? 'none' : `10px`)};
-  bottom: ${({ bottom }) => (bottom ? '10px' : `none`)};
+  top: ${({ bottom }) => (bottom === 'true' ? 'none' : `10px`)};
+  bottom: ${({ bottom }) => (bottom === 'true' ? '10px' : `none`)};
   left: 20px;
   color: inherit;
   font-size: ${({ theme }) => theme.fontSizes.goBackArrow};

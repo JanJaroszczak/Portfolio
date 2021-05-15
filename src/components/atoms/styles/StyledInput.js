@@ -39,6 +39,7 @@ export const StyledInput = styled.input`
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-appearance: none;
   transition: 0.5s;
 
   @media (max-width: 400px) {

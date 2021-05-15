@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import ScrollUpButton from 'react-scroll-up-button';
 import { ThemeProvider } from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 
@@ -13,8 +13,6 @@ import useOnClickOutside from '../utils/useOnClickOutside';
 import { mainTheme } from '../themes/mainTheme';
 
 import { StyledPageContentWrapper } from './styles/StyledMainTemplate';
-
-import { animateScroll as scroll } from 'react-scroll';
 
 const MainTemplate = ({ children }) => {
   // const [isScrollVisible, setIsScrollVisible] = useState(false);

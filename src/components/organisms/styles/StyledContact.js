@@ -113,6 +113,7 @@ export const StyledTextarea = styled.textarea`
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  -webkit-appearance: none;
   transition: 0.5s;
 
   /* @media (max-width: 1024px) {

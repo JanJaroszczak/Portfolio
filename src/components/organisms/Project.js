@@ -56,7 +56,7 @@ const Project = ({ projectMainInfo, projectFeatures }) => {
               scrollTarget: 'my-projects',
             },
           }}
-          bottom
+          bottom="true"
         >
           <i className="fas fa-arrow-left"></i>
         </StyledGoBackLink>

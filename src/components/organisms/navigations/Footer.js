@@ -17,13 +17,15 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledUl>
-        <StyledLi>{`Copyright \u00A9 ${new Date().getFullYear()} Jan Jaroszczak`}</StyledLi>
-        <StyledLi>
+        <StyledLi
+          copyright
+        >{`Copyright \u00A9 ${new Date().getFullYear()} Jan Jaroszczak`}</StyledLi>
+        <StyledLi terms>
           <StyledFooterButton onClick={() => dispatch(toggleTermsModal(true))}>
             Terms and Conditions
           </StyledFooterButton>
         </StyledLi>
-        <StyledLi>
+        <StyledLi github>
           <StyledLink
             href={'https://github.com/JanJaroszczak/Portfolio'}
             target="_blank"
