@@ -26,12 +26,12 @@ const AboutMe = () => {
 
   const titleRef = useRef();
   const imageRef = useRef();
-  const headingRef = useRef();
+  // const headingRef = useRef();
   const paragraphRef = useRef();
 
   const isTitleOnScreen = useOnScreen(titleRef);
   const isImageOnScreen = useOnScreen(imageRef);
-  const isHeadingOnScreen = useOnScreen(headingRef);
+  // const isHeadingOnScreen = useOnScreen(headingRef);
   const isParagraphOnScreen = useOnScreen(paragraphRef);
 
   if (isTitleOnScreen) {
@@ -42,9 +42,9 @@ const AboutMe = () => {
     if (!isImageVisible) setIsImageVisible(true);
   }
 
-  if (isHeadingOnScreen) {
-    if (!isHeadingVisible) setIsHeadingVisible(true);
-  }
+  // if (isHeadingOnScreen) {
+  //   if (!isHeadingVisible) setIsHeadingVisible(true);
+  // }
 
   if (isParagraphOnScreen) {
     if (!isParagraphVisible) setIsParagraphVisible(true);
@@ -66,25 +66,23 @@ const AboutMe = () => {
           />
         </StyledImageColumn>
         <StyledTextColumn>
-          <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
+          {/* <StyledSectionHeading ref={headingRef} visible={isHeadingVisible}>
             Lorem, ipsum dolor.
-          </StyledSectionHeading>
+          </StyledSectionHeading> */}
           <StyledSectionParagraph
             ref={paragraphRef}
             visible={isParagraphVisible}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia
-            aut tenetur, vitae illum reprehenderit, mollitia dignissimos ab
-            tempora itaque magnam repellendus delectus nemo assumenda omnis
-            perferendis. Ut amet nostrum necessitatibus ipsa sit sint
-            distinctio, quam doloremque, vitae corporis reprehenderit mollitia
-            explicabo dolore qui exercitationem! Sit adipisci, ut beatae facilis
-            impedit esse laudantium quaerat cupiditate velit voluptates
-            aspernatur minus voluptate nisi veniam consequuntur repellendus ad
-            perspiciatis quisquam repellat? Fugit molestiae cumque harum nemo,
-            repellat cum et magni libero, reprehenderit voluptates sunt. Eius
-            asperiores distinctio beatae esse adipisci sit quam similique illo?
-            Molestiae reiciendis quidem id explicabo ea sint, cupiditate quis.
+            An ex-Logistics &amp; Supply Chain Manager who found passion in Web
+            Development and decided to change his career path. From primary
+            school until the end of studies I created several small webpages. I
+            have always liked doing it, however due to my studies program and
+            some other career oportunities I have never dived deeper into Web
+            Development. During the first COVID-19 lockdown I finally had some
+            more time and I started learing about front-end from the very
+            beginning. I was really fun for me and something extremely
+            interesting. After some time of this learing I decided that I want
+            to change my career and try in the IT world.
           </StyledSectionParagraph>
         </StyledTextColumn>
       </StyledSectionWrapper>

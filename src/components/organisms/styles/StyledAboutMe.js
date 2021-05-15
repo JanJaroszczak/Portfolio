@@ -64,7 +64,7 @@ export const StyledTextColumn = styled.div`
 `;
 
 export const StyledSectionParagraph = styled.p`
-  margin: 20px 40px 40px;
+  margin: 20px 40px 20px;
   /* font-size: ${({ theme }) => theme.fontSizes.m}; */
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
@@ -74,10 +74,6 @@ export const StyledSectionParagraph = styled.p`
 
   @media (max-width: 1100px) {
     font-size: ${({ theme }) => theme.fontSizes.xs};
-  }
-
-  @media (max-width: 600px) {
-    margin: 20px 40px 20px;
   }
 
   @media (max-width: 480px) {
