@@ -6,7 +6,7 @@ export const StyledProjectHeaderWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-  -webkit-transition: 1s;
+  transition-delay: 0.0001s;
 `;
 
 export const StyledSectionHeading = styled.h3`

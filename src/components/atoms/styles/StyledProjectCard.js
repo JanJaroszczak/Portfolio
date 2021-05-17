@@ -13,7 +13,7 @@ export const StyledProjectCardWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-  -webkit-transition: 1s;
+  transition-delay: 0.0001s;
 
   ${({ center }) =>
     center &&
@@ -117,7 +117,7 @@ export const StyledDuringDevLabel = styled.div`
 export const StyledImg = styled.img`
   width: 100%;
   transition: 0.3s;
-  -webkit-transition: 0.3s;
+  transition-delay: 0.0001s;
 
   &:hover {
     transform: scale(1.1);

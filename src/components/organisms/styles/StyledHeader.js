@@ -39,10 +39,6 @@ export const StyledHeadingWrapper = styled.div`
     top: 40%;
   }
 
-  /* @media (max-width: 600px) {
-    top: 40%;
-  } */
-
   @media (max-width: 490px) {
     top: 43%;
   }
@@ -51,12 +47,11 @@ export const StyledHeadingWrapper = styled.div`
 export const StyledHeading = styled.h1`
   margin-bottom: 20px;
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
-  /* font-size: ${({ theme }) => theme.fontSizes.ssl}; */
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   letter-spacing: 2px;
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
-  -webkit-transition: 2s;
+  transition-delay: 0.0001s;
 
   @media (max-width: 1200px) {
     font-size: ${({ theme }) => theme.fontSizes.ul};
@@ -73,13 +68,10 @@ export const StyledHeading = styled.h1`
 
 export const StyledSubHeading = styled.h2`
   opacity: ${({ fadeIn }) => (fadeIn ? '1' : '0')};
-  /* font-size: ${({ theme }) => theme.fontSizes.xl}; */
   font-weight: ${({ theme }) => theme.fontWeights.thin};
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
-  -webkit-transition: 2s;
   transition-delay: 0.5s;
-  -webkit-transition-delay: 0.5s;
 
   @media (max-width: 1200px) {
     font-size: ${({ theme }) => theme.fontSizes.sl};

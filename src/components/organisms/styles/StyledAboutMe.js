@@ -49,7 +49,7 @@ export const StyledImg = styled.img`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-  -webkit-transition: 1s;
+  transition-delay: 0.0001s;
 
   @media (max-width: 850px) {
     max-width: 510px;
@@ -67,7 +67,7 @@ export const StyledSectionParagraph = styled.p`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-  -webkit-transition: 1s;
+  transition-delay: 0.0001s;
 
   @media (max-width: 1100px) {
     font-size: ${({ theme }) => theme.fontSizes.xs};

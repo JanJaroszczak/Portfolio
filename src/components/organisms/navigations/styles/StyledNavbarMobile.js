@@ -20,7 +20,7 @@ export const StyledMenu = styled.div`
   border-bottom: 2px solid ${({ theme }) => theme.colors.moderateGray};
   background-color: ${({ theme }) => theme.colors.gray};
   transition: 0.3s;
-  -webkit-transition: 0.3s;
+  transition-delay: 0.0001s;
 
   ${({ menuToggle }) =>
     menuToggle &&

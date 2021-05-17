@@ -9,7 +9,7 @@ export const StyledButton = styled.button`
   text-transform: capitalize;
   border: none;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
+  transition-delay: 0.0001s;
 
   @media (max-width: 320px) {
     padding: 7px 8px;

@@ -9,7 +9,7 @@ export const StyledSectionSubHeading = styled.h4`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
-  -webkit-transition: 1s;
+  transition-delay: 0.0001s;
 
   @media (max-width: 770px) {
     font-size: ${({ theme }) => theme.fontSizes.l};
