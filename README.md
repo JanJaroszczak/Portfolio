@@ -1,7 +1,7 @@
 # Portfolio website of Jan Jaroszczak
 
 A website presenting my person, my technology stack, created projects,
-with a contact form implemented.
+with a contact form implemented. It has a fully responsive design – from 280px foldable mobiles to desktops.
 
 ### Live version is available [here](https://www.janjaroszczak.com/).
 
