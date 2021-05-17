@@ -32,7 +32,7 @@ export const StyledSectionTitle = styled.h1`
 
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.ssl};
-    top: -63px;
+    top: -62px;
   }
 
   @media (max-width: 520px) {
@@ -42,7 +42,7 @@ export const StyledSectionTitle = styled.h1`
 
   @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.xxl};
-    top: -37px;
+    top: -36px;
     left: 20px;
   }
 
