@@ -72,7 +72,7 @@ const AboutMe = () => {
             into web development. During the first COVID-19 lockdown I finally
             had more free time and started learning about front-end from the
             very beginning to have a better knowledge base. It was really fun
-            for me and ,at the same time, extremely interesting - to such an
+            for me and, at the same time, extremely interesting - to such an
             extent that after several months I decided that I want to change my
             career and try my hand in the IT world. Having a job that I love, is
             my dream.
