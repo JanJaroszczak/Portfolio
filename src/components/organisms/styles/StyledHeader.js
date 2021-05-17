@@ -56,6 +56,7 @@ export const StyledHeading = styled.h1`
   letter-spacing: 2px;
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
+  -webkit-transition: 2s;
 
   @media (max-width: 1200px) {
     font-size: ${({ theme }) => theme.fontSizes.ul};
@@ -76,7 +77,9 @@ export const StyledSubHeading = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeights.thin};
   transform: ${({ fadeIn }) => (fadeIn ? 'translateY(0)' : 'translateY(20px)')};
   transition: 2s;
+  -webkit-transition: 2s;
   transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
 
   @media (max-width: 1200px) {
     font-size: ${({ theme }) => theme.fontSizes.sl};

@@ -6,6 +6,7 @@ export const StyledLi = styled.li`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 `;
 
 export const StyledProjectFeature = styled.div`

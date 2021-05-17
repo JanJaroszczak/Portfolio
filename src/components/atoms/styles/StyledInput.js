@@ -29,6 +29,7 @@ export const StyledInput = styled.input`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   -webkit-appearance: none;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 
   @media (max-width: 400px) {
     width: 100%;

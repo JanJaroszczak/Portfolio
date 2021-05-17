@@ -36,6 +36,7 @@ export const StyledSectionHeading = styled.h2`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.xxl};

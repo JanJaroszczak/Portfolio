@@ -27,7 +27,10 @@ export const StyledSectionTitle = styled.h1`
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(-${animationOffset})`};
+  -webkit-transform: ${({ visible }) =>
+    visible ? 'translateY(0)' : `translateY(-${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.ssl};
@@ -58,7 +61,10 @@ export const StyledSectionHeading = styled.h2`
   text-align: center;
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
+  -webkit-transform: ${({ visible }) =>
+    visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 
   @media (max-width: 1100px) {
     font-size: ${({ theme }) => theme.fontSizes.xxl};

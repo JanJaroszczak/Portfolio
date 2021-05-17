@@ -41,6 +41,7 @@ export const StyledForm = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 `;
 
 export const StyledFormContentWrapper = styled.div`
@@ -99,6 +100,7 @@ export const StyledTextarea = styled.textarea`
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   -webkit-appearance: none;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 
   &:focus {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -129,6 +131,7 @@ export const StyledSubSectionWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
   text-align: center;
 
   span {

@@ -11,6 +11,7 @@ export const StyledCardWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 
   @media (max-width: 720px) {
     ${({ center }) =>

@@ -35,6 +35,7 @@ export const StyledRouterNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
   cursor: pointer;
 
   @media (max-width: 650px) {
@@ -57,6 +58,7 @@ export const StyledNavLink = styled(Link)`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
   cursor: pointer;
 
   @media (max-width: 650px) {
