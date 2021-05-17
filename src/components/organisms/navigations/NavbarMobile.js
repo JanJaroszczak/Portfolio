@@ -124,6 +124,33 @@ const NavbarMobile = ({ mobileMenuOn }) => {
             </StyledRouterNavLink>
           )}
         </StyledLi>
+        <StyledLi>
+          {isHomePageOpen ? (
+            <StyledNavLink
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={handleMenuClick}
+            >
+              Contact
+            </StyledNavLink>
+          ) : (
+            <StyledRouterNavLink
+              to={{
+                pathname: '/',
+                state: {
+                  scrollTarget: 'contact',
+                },
+              }}
+              onClick={handleMenuClick}
+            >
+              Contact
+            </StyledRouterNavLink>
+          )}
+        </StyledLi>
       </StyledUl>
     </StyledMenu>
   );
