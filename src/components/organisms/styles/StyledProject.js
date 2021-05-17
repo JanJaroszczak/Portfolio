@@ -18,12 +18,12 @@ export const StyledSectionWrapper = styled.section`
     padding: 0 30px 40px;
   }
 
-  @media (max-width: 550px) {
-    padding: 0 15px 40px;
+  @media (max-width: 650px) {
+    margin-top: 70px;
   }
 
-  @media (max-width: 490px) {
-    margin-top: 70px;
+  @media (max-width: 550px) {
+    padding: 0 15px 40px;
   }
 
   @media (max-width: 480px) {
