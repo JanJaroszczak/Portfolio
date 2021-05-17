@@ -34,6 +34,9 @@ const Project = ({ projectMainInfo, projectFeatures }) => {
     <StyledCommonPageWrapper>
       <a id="project" className="scroll-target" />
       <StyledSectionWrapper>
+        <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
+          {projectMainInfo.pageTitle}
+        </StyledSectionTitle>
         <StyledGoBackLink
           to={{
             pathname: '/',
@@ -44,9 +47,6 @@ const Project = ({ projectMainInfo, projectFeatures }) => {
         >
           <i className="fas fa-arrow-left"></i>
         </StyledGoBackLink>
-        <StyledSectionTitle ref={titleRef} visible={isTitleVisible}>
-          {projectMainInfo.pageTitle}
-        </StyledSectionTitle>
         <ProjectHeader {...projectMainInfo} />
         <ProjectFeatures projectFeatures={projectFeatures} />
         <StyledGoBackLink
