@@ -41,7 +41,7 @@ const ProjectHeader = ({
       <StyledLinksList>
         <li>
           <StyledLink href={gitHubLink} target="_blank">
-            <i className="fab fa-github"></i>Github
+            <i className="fab fa-github"></i>GitHub
           </StyledLink>
         </li>
         <li>
