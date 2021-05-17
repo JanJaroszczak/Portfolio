@@ -52,6 +52,21 @@ p {
   display:block;
   height: 150px; 
   margin: -150px 0 0; 
+
+    @media (max-width: 650px) {
+    height: 130px; 
+  margin: -130px 0 0; 
+  }
+
+    @media (max-width: 520px) {
+    height: 110px; 
+  margin: -110px 0 0; 
+  }
+
+    @media (max-width: 480px) {
+ height: 40px; 
+  margin: -40px 0 0; 
+  }
 }
 
 ::-webkit-scrollbar {
