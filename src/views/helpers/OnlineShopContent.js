@@ -15,7 +15,7 @@ export const onlineShopMainInfo = {
   usedTechnologies:
     'HTML, CSS, JavaScript, React, Redux, React Router, Google Firebase, Formik, Yup, EmailJS, Material-UI, Swiper, Styled Components, Responsive Web Design, Atomic Design.',
   gitHubLink: 'https://github.com/JanJaroszczak/React-Online-Shop',
-  liveVersionLink: 'https://github.com/JanJaroszczak/React-Online-Shop',
+  liveVersionLink: 'https://coolcleats.netlify.app/',
 };
 
 export const onlineShopFeatures = [
