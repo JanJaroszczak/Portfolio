@@ -66,15 +66,16 @@ const AboutMe = () => {
           >
             I am an ex-logistics and supply chain manager who found passion in
             web development and decided to change his career path. From primary
-            school until the end of studies I created several small webpages. I
-            have always liked doing it, however due to my studies program and
-            some other career opportunities I have never dived deeper into web
-            development. During the first COVID-19 lockdown I finally had some
-            more free time and I started learing about front-end from the very
-            beginning to have a better knowledge basis. It was really fun for me
-            and something extremely interesting - to such an extent that after
-            several months I decided that I want to change my career and try my
-            hand in the IT world. Having a job which I love, is my dream.
+            school until graduating from university I created several small
+            webpages. I have always enjoyed doing it, however due to my program
+            of studies and other career opportunities I have never dived deeper
+            into web development. During the first COVID-19 lockdown I finally
+            had more free time and started learning about front-end from the
+            very beginning to have a better knowledge base. It was really fun
+            for me and ,at the same time, extremely interesting - to such an
+            extent that after several months I decided that I want to change my
+            career and try my hand in the IT world. Having a job that I love, is
+            my dream.
           </StyledSectionParagraph>
         </StyledTextColumn>
       </StyledSectionWrapper>
