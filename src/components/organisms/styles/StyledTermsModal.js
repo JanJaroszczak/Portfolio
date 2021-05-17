@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTermsWrapper = styled.div`
-  max-height: 70vh;
+  max-height: 65vh;
   overflow: auto;
 `;
 
@@ -16,4 +16,18 @@ export const StyledTermsContentWrapper = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.xxs};
   font-weight: ${({ theme }) => theme.fontWeights.light};
   text-align: justify;
+  overflow-wrap: break-word;
+
+  h3 {
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+
+  h4 {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
+
+  p,
+  li {
+    font-size: ${({ theme }) => theme.fontSizes.xs};
+  }
 `;
