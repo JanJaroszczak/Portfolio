@@ -45,7 +45,7 @@ const ProjectCard = ({
         )}
         {duringDev && (
           <StyledDuringDevLabel>
-            <span>During dev...</span>
+            <span>In development</span>
           </StyledDuringDevLabel>
         )}
       </StyledImageWrapper>

@@ -13,6 +13,7 @@ export const StyledProjectCardWrapper = styled.div`
   transform: ${({ visible }) =>
     visible ? 'translateY(0)' : `translateY(${animationOffset})`};
   transition: 1s;
+  -webkit-transition: 1s;
 
   ${({ center }) =>
     center &&
@@ -71,18 +72,34 @@ export const StyledDuringDevLabel = styled.div`
   color: white;
   line-height: 40px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1040px) {
     height: 30px;
     top: 30px;
     right: -100px;
-    font-size: ${({ theme }) => theme.fontSizes.s};
+    font-size: ${({ theme }) => theme.fontSizes.xs};
     line-height: 30px;
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 670px) {
+    height: 40px;
+    top: 50px;
+    right: -70px;
+    font-size: ${({ theme }) => theme.fontSizes.m};
+    line-height: 40px;
+  }
+
+  @media (max-width: 550px) {
+    height: 30px;
+    top: 30px;
+    right: -100px;
+    font-size: ${({ theme }) => theme.fontSizes.xs};
+    line-height: 30px;
+  }
+
+  @media (max-width: 360px) {
     height: 20px;
-    top: 20px;
-    right: -125px;
+    top: 30px;
+    right: -115px;
     font-size: ${({ theme }) => theme.fontSizes.ss};
     line-height: 20px;
   }
@@ -90,7 +107,8 @@ export const StyledDuringDevLabel = styled.div`
   span {
     padding-left: 10px;
 
-    @media (max-width: 380px) {
+    @media (max-width: 360px) {
+      padding-right: 5px;
       padding-left: 0;
     }
   }
@@ -99,6 +117,7 @@ export const StyledDuringDevLabel = styled.div`
 export const StyledImg = styled.img`
   width: 100%;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
 
   &:hover {
     transform: scale(1.1);
