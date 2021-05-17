@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTermsWrapper = styled.div`
-  max-height: 65vh;
+  max-height: 60vh;
   overflow: auto;
 `;
 
@@ -20,10 +20,12 @@ export const StyledTermsContentWrapper = styled.div`
 
   h3 {
     font-size: ${({ theme }) => theme.fontSizes.m};
+    text-align: left;
   }
 
   h4 {
     font-size: ${({ theme }) => theme.fontSizes.s};
+    text-align: left;
   }
 
   p,
