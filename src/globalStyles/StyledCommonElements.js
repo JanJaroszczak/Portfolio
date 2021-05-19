@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { isIOS, isAndroid } from 'react-device-detect';
 
 import { animationOffset } from '../helpers/elementsCSSVariables';
 
@@ -22,7 +23,7 @@ export const StyledCommonPageWrapper = styled.div`
 
 export const StyledSectionTitle = styled.h1`
   position: absolute;
-  top: -84px;
+  top: ${isIOS ? '-85px' : '-84px'};
   left: 40px;
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   transform: ${({ visible }) =>
@@ -32,23 +33,24 @@ export const StyledSectionTitle = styled.h1`
 
   @media (max-width: 650px) {
     font-size: ${({ theme }) => theme.fontSizes.ssl};
-    top: -62px;
+    top: ${isAndroid ? '-62px' : '-63px'};
   }
 
   @media (max-width: 520px) {
     font-size: ${({ theme }) => theme.fontSizes.xxxl};
-    top: -51px;
+    top: ${isAndroid ? '-50px' : '-51px'};
   }
 
   @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.xxl};
-    top: -36px;
+    top: -37px;
+    top: ${isAndroid ? '-36px' : '-37px'};
     left: 20px;
   }
 
   @media (max-width: 350px) {
     font-size: ${({ theme }) => theme.fontSizes.xl};
-    top: -34px;
+    top: ${isIOS ? '-35px' : '-34px'};
     left: 20px;
   }
 `;
