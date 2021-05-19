@@ -16,10 +16,16 @@ const HomePage = ({ history }) => {
   useEffect(() => {
     dispatch(toggleIsHomePageOpen(true));
 
+    let timer;
     if (history.location.state) {
-      scroller.scrollTo(history.location.state.scrollTarget);
-      window.history.replaceState({}, '');
+      timer = setTimeout(() => {
+        scroller.scrollTo(history.location.state.scrollTarget);
+        window.history.replaceState({}, '');
+      }, 300);
     }
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
