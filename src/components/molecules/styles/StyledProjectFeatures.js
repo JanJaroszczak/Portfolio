@@ -15,3 +15,9 @@ export const StyledSectionSubHeading = styled.h4`
     font-size: ${({ theme }) => theme.fontSizes.l};
   }
 `;
+
+export const StyledFeaturesUl = styled.ul`
+  li:last-child div {
+    margin: 20px 0 25px;
+  }
+`;

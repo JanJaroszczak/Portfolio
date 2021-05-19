@@ -53,6 +53,11 @@ export const StyledLinksList = styled.ul`
 
   li:not(:last-child) {
     margin-right: 40px;
+
+    @media (max-width: 480px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 `;
 

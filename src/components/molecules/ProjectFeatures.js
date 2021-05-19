@@ -3,7 +3,10 @@ import React, { useState, useRef } from 'react';
 import ProjectFeature from '../atoms/ProjectFeature';
 import useOnScreen from '../../utils/useOnScreen';
 
-import { StyledSectionSubHeading } from './styles/StyledProjectFeatures';
+import {
+  StyledSectionSubHeading,
+  StyledFeaturesUl,
+} from './styles/StyledProjectFeatures';
 
 const ProjectFeatures = ({ projectFeatures }) => {
   const [isSubHeadingVisible, setIsSubHeadingVisible] = useState(false);
@@ -28,7 +31,7 @@ const ProjectFeatures = ({ projectFeatures }) => {
       >
         Main features:
       </StyledSectionSubHeading>
-      <ul>{features}</ul>
+      <StyledFeaturesUl>{features}</StyledFeaturesUl>
     </>
   );
 };
