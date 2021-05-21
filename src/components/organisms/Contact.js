@@ -177,7 +177,7 @@ const Contact = () => {
             emailjs
               .send(
                 'contact_service',
-                'contact_form',
+                'template_magzd7p',
                 values,
                 process.env.REACT_APP_EMAILJS_USERID
               )
